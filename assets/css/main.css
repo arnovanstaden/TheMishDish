@@ -1,0 +1,314 @@
+@import "./fonts.css";
+
+/* 1. GENERAL */
+
+body,
+html {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    font-family: var(--sans-serif);
+    padding: 0;
+    margin: 0;
+    ;
+}
+
+/* Set Variables */
+
+:root {
+    --serif: "Cormorant";
+    --sans-serif: "Montserrat";
+    --dark-blue: #213242;
+    --light-blue: #EDF1FE;
+    --yellow: #E7B90C;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+/* Style the navbar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-logo img {
+    width: 50%;
+}
+
+
+
+
+
+
+
+/* 2. RECIPE PAGE */
+
+/* Recipe Intro */
+
+.recipe-intro {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.recipe-info {
+    padding: 0 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe-name {
+    font-family: var(--serif);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--dark-blue);
+    margin: 0;
+    padding-top: 7.5%;
+}
+
+.recipe-description {
+    font-family: var(--sans-serif);
+    font-weight: 300;
+    padding-right: 20%;
+    margin: 0;
+}
+
+.recipe-info>.divider-line {
+    width: 30%;
+    height: 2.5px;
+    background-color: var(--yellow);
+    margin: 1rem 0;
+}
+
+.recipe-image {
+    background-image: url("../images/recipes/M001.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.recipe-arrows {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.recipe-arrows>div {
+    background-color: rgba(33, 50, 66, 0.9);
+}
+
+.recipe-arrows>div:hover {
+    background-color: rgba(231, 185, 12, 0.9);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.recipe-arrows>div:hover i {
+    color: var(--dark-blue);
+    transition: 0.4s;
+}
+
+.recipe-arrows i {
+    color: var(--light-blue);
+    padding: 0.5rem 0.8rem;
+    font-size: 1.25rem;
+}
+
+.recipe-arrows>div:nth-child(1) {
+    margin-right: 2px;
+}
+
+.recipe-serving {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.recipe-serving p {
+    background-color: var(--dark-blue);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    color: var(--light-blue);
+    margin: 0;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;;
+}
+
+.recipe-stats {
+    display: flex;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.recipe-stats>div {
+    padding: 0 3rem;
+    border-right: 1px solid var(--yellow);
+}
+
+.recipe-stats>div:nth-child(1) {
+    padding-left: 0;
+}
+
+.recipe-stats>div:nth-child(1) p{
+    font-weight: 500;
+}
+
+.recipe-stats>div:last-child {
+    border-right: none;
+}
+
+.recipe-stats p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.recipe-stats h6 {
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    color: var(--dark-blue);
+}
+
+.recipe-ingredients {
+    padding-top: 3rem;
+    padding-right: 2rem;
+}
+
+.ingredient {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.ingredient:hover {
+    transform: scale(1.05);
+    transition: transform 1s;
+}
+
+.ingredient-image {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20px;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px 5px #e0e0e0;
+}
+
+.ingredient-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+#ing-white-onion {
+    background-image: url("../images/ingredients/white-onion.jpg");
+}
+
+#ing-chicken-breasts {
+    background-image: url("../images/ingredients/chicken-breasts.jpg");
+}
+
+#ing-brocolli {
+    background-image: url("../images/ingredients/brocolli.jpg");
+}
+
+#ing-basil-pesto {
+    background-image: url("../images/ingredients/basil-pesto.jpg");
+}
+
+#ing-spagetti {
+    background-image: url("../images/ingredients/spagetti.jpg");
+}
+
+#ing-rosa-tomatoes {
+    background-image: url("../images/ingredients/rosa-tomatoes.jpg");
+}
+
+
+/* Recipe Method */
+
+.recipe-method {
+    /* height: 100vh; */
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.recipe-method-ingredients {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+}
+
+.recipe-method-ingredients h1 {
+    color: var(--light-blue);
+    font-family: var(--serif);
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.recipe-method-ingredients .divider-line {
+    width: 30%;
+    height: 2.5px;
+    background-color: var(--yellow);
+    margin: 1rem auto;
+}
+
+.ingredients-list {
+    list-style: none;
+    padding: 5% 10%;
+    margin: 0;
+}
+
+.ingredients-list li {
+    color: var(--light-blue);
+    margin: 1rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+}
+
+.ingredients-list li img{
+    width: 2rem;
+    padding-right: 0.8rem;
+}
+
+.recipe-method-steps {
+    background-color: var(--light-blue);
+}
+
