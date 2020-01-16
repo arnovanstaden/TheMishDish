@@ -69,6 +69,7 @@ html {
     width: 100vw;
     display: grid;
     grid-template-columns: 40% 60%;
+    position: relative;
 }
 
 .recipe-info {
@@ -103,10 +104,11 @@ html {
 }
 
 .recipe-image {
-    background-image: url("../images/recipes/M001.jpg");
+    background-image: url("../images/recipes/M001/1.jpg");
     background-position: center center;
     background-size: cover;
     position: relative;
+    transition: background-image 1s;
 }
 
 .recipe-arrows {
@@ -118,23 +120,24 @@ html {
 
 .recipe-arrows>div {
     background-color: rgba(33, 50, 66, 0.9);
+    transition: 0.4s;
 }
 
 .recipe-arrows>div:hover {
     background-color: rgba(231, 185, 12, 0.9);
-    transition: 0.4s;
     cursor: pointer;
 }
 
 .recipe-arrows>div:hover i {
     color: var(--dark-blue);
-    transition: 0.4s;
+
 }
 
 .recipe-arrows i {
     color: var(--light-blue);
     padding: 0.5rem 0.8rem;
     font-size: 1.25rem;
+    transition: 0.4s;
 }
 
 .recipe-arrows>div:nth-child(1) {
@@ -154,7 +157,8 @@ html {
     margin: 0;
     border-radius: 20px;
     font-size: 1rem;
-    font-weight: 500;;
+    font-weight: 500;
+    ;
 }
 
 .recipe-stats {
@@ -172,7 +176,7 @@ html {
     padding-left: 0;
 }
 
-.recipe-stats>div:nth-child(1) p{
+.recipe-stats>div:nth-child(1) p {
     font-weight: 500;
 }
 
@@ -198,7 +202,7 @@ html {
 
 .recipe-ingredients {
     padding-top: 3rem;
-    padding-right: 2rem;
+    /* padding-right: 5rem; */
 }
 
 .ingredient {
@@ -207,11 +211,11 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0;
+    transition: 1s;
 }
 
 .ingredient:hover {
     transform: scale(1.05);
-    transition: transform 1s;
 }
 
 .ingredient-image {
@@ -224,7 +228,7 @@ html {
 }
 
 .ingredient-name {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.9rem;
     padding: 0 1rem;
     text-align: center;
@@ -270,10 +274,10 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10% 0;
+    padding: 10% 5%;
 }
 
-.recipe-method-ingredients h1 {
+.recipe-method h1 {
     color: var(--light-blue);
     font-family: var(--serif);
     font-size: 3rem;
@@ -282,7 +286,8 @@ html {
     letter-spacing: 1px;
 }
 
-.recipe-method-ingredients .divider-line {
+
+.recipe-method .divider-line {
     width: 30%;
     height: 2.5px;
     background-color: var(--yellow);
@@ -290,25 +295,71 @@ html {
 }
 
 .ingredients-list {
-    list-style: none;
-    padding: 5% 10%;
     margin: 0;
 }
 
-.ingredients-list li {
+.ingredients-list div {
     color: var(--light-blue);
     margin: 1rem;
     letter-spacing: 0.5px;
     display: flex;
     align-items: center;
+    transition: 0.7s;
 }
 
-.ingredients-list li img{
+.ingredients-list div:hover img {
+    transform: rotate(180deg);
+}
+
+.ingredients-list div:hover p {
+    padding-left: 0.5rem;
+}
+
+.ingredients-list div p {
+    display: inline;
+    margin: 0;
+    transition: 0.7s;
+}
+
+.ingredients-list div img {
     width: 2rem;
-    padding-right: 0.8rem;
+    margin-right: 0.8rem;
+    transition: 0.5s ease;
+}
+
+.ingredients-list span {
+    font-weight: 600;
+    margin-right: 0.5rem;
 }
 
 .recipe-method-steps {
-    background-color: var(--light-blue);
+    /* background-color: rgba(237, 241, 254, 0.5); */
+    padding: 5% 10%;
 }
 
+.recipe-method-steps h1 {
+    color: var(--dark-blue);
+}
+
+.recipe-method-steps .divider-line {
+    width: 15%;
+}
+
+.recipe-method-steps ul {
+    list-style: none;
+}
+
+.recipe-method-steps div span {
+    background-color: var(--dark-blue);
+    color: white;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.recipe-method-steps-list p {
+    display: flex;
+    justify-content: top;
+    align-items: center
+}

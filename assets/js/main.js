@@ -37,3 +37,11 @@ $(document).ready(function () {
     }
   });
 });
+
+$(".next-image").click(function() {
+  $(".recipe-image").css("background-image",'url("/assets/images/recipes/M001/2.jpg")')
+});
+
+$(".prev-image").click(function() {
+  $(".recipe-image").css("background-image",'url("/assets/images/recipes/M001/1.jpg")')
+});
