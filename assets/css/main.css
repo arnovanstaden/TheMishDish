@@ -11,7 +11,10 @@ html {
     font-family: var(--sans-serif);
     padding: 0;
     margin: 0;
-    ;
+}
+
+body {
+    position: relative;
 }
 
 /* Set Variables */
@@ -27,37 +30,114 @@ html {
 
 /* Navbar */
 
-.navbar {
-    background-color: white;
+/* Navbar Icon */
+
+.navbar-icon {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 50;
+}
+
+.navbar-icon:hover .bar {
+    background-color: var(--yellow) !important;
+}
+
+#bar1,
+#bar2,
+#bar3 {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--dark-blue);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change #bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Navbar Content */
+
+.navbar-content {
+    background-color: rgba(255, 255, 255, 1);
+    width: 0;
+    height: 100vh;
     position: fixed;
     top: 0;
-    width: 100%;
-    transition: top 0.3s;
+    right: 0;
+    z-index: 40;
+    transition: ease 0.8s;
+    overflow-x: hidden;
 }
 
-/* Style the navbar links */
-.navbar a {
-    float: left;
-    display: block;
-    color: black;
+.navbar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-content img {
+    width: 25rem;
+    padding-bottom: 3rem;
+}
+
+.navbar-links>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 15px;
+    margin: 0.75rem 0;
+}
+
+.navbar-links>div>a {
+    font-family: var(--serif);
     text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: 500;
+    font-size: 2.5rem;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.navbar-logo img {
-    width: 50%;
+.navbar-links i {
+    font-size: 1.75rem;
+    color: var(--yellow);
+    margin-right: 1.5rem;
 }
 
 
+/* Custom Scrollbar */
 
+::-webkit-scrollbar {
+    width: 8px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--light-blue);
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--dark-blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--yellow);
+}
 
 
 /* 2. RECIPE PAGE */
@@ -262,7 +342,6 @@ html {
 /* Recipe Method */
 
 .recipe-method {
-    /* height: 100vh; */
     width: 100vw;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -322,7 +401,7 @@ html {
 }
 
 .ingredients-list div img {
-    width: 2rem;
+    width: 1.75rem;
     margin-right: 0.8rem;
     transition: 0.5s ease;
 }
