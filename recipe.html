@@ -53,19 +53,19 @@
         <div class="navbar-links">
             <div>
                 <i class="fal fa-scroll"></i>
-                <a href="index.html" class="">Recipes</a>
+                <a href="index.html" class="hvr-underline-from-left">Recipes</a>
             </div>
             <div>
                 <i class="fal fa-steak"></i>
-                <a href="index.html">Meat</a>
+                <a href="index.html#meat" class="hvr-underline-from-left">Meat</a>
             </div>
             <div>
                 <i class="fal fa-salad"></i>
-                <a href="index.html">Vegetarian</a>
+                <a href="index.html#vegetarian" class="hvr-underline-from-left">Vegetarian</a>
             </div>
             <div>
                 <i class="fal fa-leaf-heart"></i>
-                <a href="index.html">Vegan</a>
+                <a href="index.html#vegan" class="hvr-underline-from-left">Vegan</a>
             </div>
         </div>
     </div>
@@ -75,6 +75,7 @@
 
     <section class="recipe-intro">
         <div class="recipe-image">
+            <div class="recipe-circle"></div>
             <div class="recipe-arrows">
                 <div class="prev-image">
                     <i class="fal fa-chevron-left"></i>
@@ -91,20 +92,24 @@
                 voluptas optio ullam dicta repellendus totam, aperiam labore.</p>
             <div class="recipe-stats">
                 <div>
+                    <i class="fal fa-soup"></i>
                     <p>serving</p>
-                    <h6>1</h6>
+                    <h6 class="recipe-serving">1</h6>
                 </div>
                 <div>
+                    <i class="fal fa-clock"></i>
                     <p>minutes</p>
-                    <h6>40</h6>
+                    <h6 class="recipe-minutes">40</h6>
                 </div>
                 <div>
+                    <i class="fal fa-apple-alt"></i>
                     <p>calories</p>
-                    <h6>225</h6>
+                    <h6 class="recipe-calories">225</h6>
                 </div>
                 <div>
+                    <i class="fal fa-salad"></i>
                     <p>ingredients</p>
-                    <h6>6</h6>
+                    <h6 class="recipe-ing-count">6</h6>
                 </div>
             </div>
             <div class="recipe-ingredients owl-carousel">
@@ -140,52 +145,13 @@
         <div class="recipe-method-ingredients">
             <h1>Ingredients</h1>
             <div class="divider-line"></div>
-            <div class="ingredients-list">
-                <div>
-                    <img src="./assets/images/icons/list-bullet.png">
-                    <p><span>1</span> chicken breast (cut into small chunks)</p>
-                </div>
-                <div>
-                    <img src="./assets/images/icons/list-bullet.png">
-
-                    <p><span>1/4</span> normal sized store bought broccoli (finely chopped)</p>
-                </div>
-                <div>
-                    <img src="./assets/images/icons/list-bullet.png">
-
-                    <p> <span>1/4 </span>white onion</p>
-                </div>
-                <div>
-                    <img src="./assets/images/icons/list-bullet.png">
-
-                    <p> <span>2</span>heaped tablespoons of basil pesto (below instructions on how to make home-made)
-                    </p>
-                </div>
-                <div>
-                    <img src="./assets/images/icons/list-bullet.png">
-                    <p>spaghetti pasta</p>
-                </div>
-                <div>
-                    <img src="./assets/images/icons/list-bullet.png">
-
-                    <p> <span>5</span>rosa tomatoes</p>
-                </div>
+            <div class="ingredients-list">              
             </div>
         </div>
         <div class="recipe-method-steps">
             <h1>Method</h1>
             <div class="divider-line"></div>
             <div class="recipe-method-steps-list">
-                <p><span>1</span>Heat some olive oil in a frying pan.</p>
-                <p><span>2</span>Fry your onion and chicken, seasoning with some salt and pepper.</p>
-                <p><span>3</span>Once browned, add your finely chopped broccoli.</p>
-                <p><span>4</span>Whilst frying, season with chilli flakes/paprika.</p>
-                <p><span>5</span>Add your basil pesto. </p>
-                <p><span>6</span>Fry for about another 5-10 minutes until the whole mixture looks slightly
-                    brownish and crispy.</p>
-                <p><span>7</span>Serve above mixture on a bed of spaghetti pasta, accompanied by some fresh rosa
-                    tomatoes cut in
-                    halves. Delish!</p>
             </div>
         </div>
 
@@ -198,6 +164,7 @@
     <!-- <script src="./vendors/bootstrap/bootstrap.bundle.min.js"></script> -->
     <script src="./vendors/owl-carousel/owl.carousel.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/recipes.js"></script>
 
 </body>
 

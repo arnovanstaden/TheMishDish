@@ -1,0 +1,99 @@
+{
+    "M001": {
+        "Name": "Chicken & Brocolli Pesto Pasta",
+        "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis voluptas optio ullam dicta repellendus totam, aperiam labore.",
+        "Ingredients": ["1 Chicken Breast",
+            "1/4 normal sized store bought broccoli (finely chopped)",
+            "1/4 white onion",
+            "2 heaped tablespoons of basil pesto (below instructions on how to make home-made",
+            "spaghetti pasta",
+            "rosa tomatoes"
+        ],
+        "Method": [
+            "Heat some olive oil in a frying pan.",
+            "Fry your onion and chicken, seasoning with some salt and pepper.",
+            "Once browned, add your finely chopped broccoli",
+            "Whilst frying, season with chilli flakes / paprika.",
+            "Add your basil pesto.",
+            "Fry for about another 5 - 10 minutes until the whole mixture looks slightly brownish and crispy.",
+            "Serve above mixture on a bed of spaghetti pasta, accompanied by some fresh rosa tomatoes cut in halves.Delish!"
+        ],
+        "Servings": "1",
+        "Minutes": "40",
+        "Calories": "225",
+        "ImageCount": "2"
+    },
+    "M002": {
+        "Name": "Soya Chicken & Avo Bowl",
+        "Description": "   ",
+        "Ingredients": [
+            "Handful of baby spinach",
+            "1/4 red pepper",
+            "1 chicken breast",
+            "1/2 avocado (cut into small cubes/chunks)",
+            "tablespoon of roasted sunflower seeds",
+            "tablespoon of roasted pumpkin seeds",
+            "soya sauce (preferably a thicker one)"
+        ],
+        "Method": [
+            "Cut your red pepper ‘julienne’ style and your chicken breasts into small chunks.",
+            "Heat up in a frying pan with some olive oil and salt & pepper until you can see the chicken is pretty much cooked.",
+            "Then add your soya sauce (at least 1 tablespoon) and mix through thoroughly. Leave aside this mixture.",
+            "In a serving bowl, put your handful of baby spinach in. Then add your chicken mixture (only when cooled down otherwise it will cook your spinach, unless you want that then go ahead when it’ s warm).",
+            "Add your avo and your roasted seeds and viola!"
+        ],
+        "Servings": "1",
+        "Minutes": "  ",
+        "Calories": "  ",
+        "ImageCount": "2"
+    },
+    "M003": {
+        "Name": "Thai Green Curry & Peppers Chicken",
+        "Description": "   ",
+        "Ingredients": [
+            "4 cloves of garlic",
+            "1 tablespoon of fresh ginger",
+            "1 white onion",
+            "1 red pepper",
+            "1 yellow pepper",
+            "1 orange pepper",
+            "4 chicken breasts",
+            "thai green curry paste",
+            "1 can of coconut milk",
+            "2 handfuls of frozen peas",
+            "3 cups of basmati rice"
+        ],
+        "Method": [
+            "Slice up your onion and start to fry in your pot. [Side note, from beginning to start you should keep your pot on low heat].",
+            "Finely chop your garlic and ginger and add to your onions.",
+            "Cook for about 5-10 minutes until the onions are slightly browning.",
+            "Julienne your peppers (the thinner the slices the better as then they will ‘cook away’ and add a lot of sweetness and flavor to your dish).",
+            "Add to your onions and stir thoroughly.",
+            "Cut your chicken into small slices/chunks and season with salt & pepper.",
+            "Add to your onions & peppers and stir thoroughly.",
+            "Cook until your chicken pieces are white (no red in sight) but not until brown.",
+            "Add your thai green curry paste and stir through thoroughly.",
+            "Add your coconut milk and frozen peas, stir thoroughly and allow to simmer for app 20 minutes.",
+            "Cook your rice while your curry is simmering.",
+            "In a bowl, serve rice, curry and your sambals - viola!"
+        ],
+        "Servings": "3-4",
+        "Minutes": "  ",
+        "Calories": "  ",
+        "ImageCount": "2"
+    },
+    "M004": {
+        "Name": "  ",
+        "Description": "   ",
+        "Ingredients": [
+            ""
+        ],
+        "Method": [
+            ""
+        ],
+        "Servings": "3-4",
+        "Minutes": "  ",
+        "Calories": "  ",
+        "ImageCount": "2"
+    }
+}

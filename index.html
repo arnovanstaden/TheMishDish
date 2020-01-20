@@ -39,14 +39,110 @@
 
     <!-- Navbar -->
 
-    <!-- <div class="navbar">
-        <a href="./index.html" class="navbar-logo">
-        <img src="./assets/images/icons/TMD---Logo---Horisontal---500px.png" alt=""></a>
-    </div> -->
+    <div class="navbar-icon" onclick="openMenu(this)">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+    </div>
+
+    <div class="navbar-content">
+        <img src="./assets/images/icons/Logo-Horisontal.png" alt="">
+        <div class="divider-line"></div>
+        <div class="navbar-links">
+            <div>
+                <i class="fal fa-scroll"></i>
+                <a href="index.html" class="hvr-underline-from-left">All Recipes</a>
+            </div>
+            <div>
+                <i class="fal fa-steak"></i>
+                <a href="index.html#meat" class="hvr-underline-from-left">Meat</a>
+            </div>
+            <div>
+                <i class="fal fa-salad"></i>
+                <a href="index.html#vegetarian" class="hvr-underline-from-left">Vegetarian</a>
+            </div>
+            <div>
+                <i class="fal fa-leaf-heart"></i>
+                <a href="index.html#vegan" class="hvr-underline-from-left">Vegan</a>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="home-recipe-section">
+        <h1>All Recipes</h1>
+        <div class="divider-line"></div>
+        <div class="home-recipe-categories">
+            <p class="active-recipe-cat">All</p>
+            <p>Meat</p>
+            <p>Vegetarian</p>
+            <p>Vegan</p>
+        </div>
+        <div class="home-recipe-grid">
+
+            <!-- Meat Recipe -->
+            <a class="home-recipe recipe-meat" id="M001" href="./recipe.html#M001">
+                <div class="home-recipe-image">
+                    <div class="home-recipe-image-cover"></div>
+                </div>
+                <h5>Chicken & Brocolli Pesto Pasta</h5>
+            </a>
+            <a class="home-recipe recipe-meat" id="M002" href="./recipe.html#M002">
+                <div class="home-recipe-image"></div>
+                <h5>Soya Chicken & Avo Bowl</h5>
+            </a>
+            <a class="home-recipe recipe-meat" id="M003" href="./recipe.html#M003">
+                <div class="home-recipe-image"></div>
+                <h5>Thai Green Curry & Peppers Chicken</h5>
+            </a>
+
+            <!-- Vegetarian -->
+            <a class="home-recipe">
+                <div class="home-recipe-image recipe-vegetarian"></div>
+                <h5>Asparagus & Mushroom Pasta with Creamy Avo Sauce</h5>
+            </a>
+            <a class="home-recipe">
+                <div class="home-recipe-image recipe-vegetarian"></div>
+                <h5>Health Toast with Asparagus & Avo</h5>
+            </a>
+            <a class="home-recipe">
+                <div class="home-recipe-image recipe-vegetarian"></div>
+                <h5>Veggie Bowl with Tangy Corriander Dressing</h5>
+            </a>
+
+            <!-- Vegan -->
+            <a class="home-recipe">
+                <div class="home-recipe-image recipe-vegan"></div>
+                <h5>Chickpea Bake in Creamy Tomato Based Sauce</h5>
+            </a>
+            <a class="home-recipe">
+                <div class="home-recipe-image recipe-vegan"></div>
+                <h5>Chickpea Health Bowl</h5>
+            </a>
+
+        </div>
+    </section>
+
+
+    <section class="about-section">
+        <div class="about-text">
+            <h1>About Mish</h1>
+            <div class="divider-line"></div>
+            <p>My name is Mish. I am not a professional chef and I have no education or background in either cooking or
+                nutrition. I am merely your every day gal with a passion for cooking and creating dishes and ‘recipes'
+                which are: affordable, easy to make, my personal opinion of healthy, made from your every day fridge
+                ingredients and full of flavor. I often find that recipes by well known chefs, despite being delicious,
+                were either too difficult to follow, required specific kitchen tools, or required ingredients which you
+                had to go out and source, buy at a high price and then never use again. That is why I created ‘The Mish
+                Dish’ - a personal catalogue of some of my favorite, personally created, go-to dishes. Enjoy</p>
+        </div>
+        <img src="./assets/images/other/about-mish.jpg" alt="">
+    </section>
+
+
 
     <!-- Scripts -->
     <script src="vendors/jquery/jquery-3.4.1.min.js"></script>
-    <!-- <script src="./vendors/bootstrap/bootstrap.bundle.min.js"></script> -->
     <script src="./assets/js/main.js"></script>
 
 </body>

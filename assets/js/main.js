@@ -12,39 +12,36 @@ window.onscroll = function () {
 }
 
 
-// Owl Carousel
+if (window.location.pathname.split("/").pop() === "recipe.html") {
 
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-      1000: {
-        items: 5
+  // Owl Carousel
+
+
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        1000: {
+          items: 5
+        }
       }
-    }
+    });
+
+    $(".owl-carousel recipe-gallery").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        1000: {
+          items: 1
+        }
+      }
+    });
   });
 
-  $(".owl-carousel recipe-gallery").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-      1000: {
-        items: 1
-      }
-    }
-  });
-});
-
-$(".next-image").click(function () {
-  $(".recipe-image").css("background-image", 'url("/assets/images/recipes/M001/2.jpg")')
-});
-
-$(".prev-image").click(function () {
-  $(".recipe-image").css("background-image", 'url("/assets/images/recipes/M001/1.jpg")')
-});
+}
 
 
 // Menu Icon
@@ -84,3 +81,7 @@ function openMenu() {
     $(".navbar-content").toggleClass("navbar-open");
   }
 }
+
+
+//  Filter Recipe Categories
+
