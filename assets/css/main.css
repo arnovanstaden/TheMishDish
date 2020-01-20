@@ -11,6 +11,7 @@ html {
     font-family: var(--sans-serif);
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -72,7 +73,7 @@ body {
 /* Navbar Content */
 
 .navbar-content {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.95);
     width: 0;
     height: 100vh;
     position: fixed;
@@ -112,6 +113,7 @@ body {
 
 .navbar-links>div>a:hover {
     padding-left: 0.5rem;
+    color: var(--yellow);
 }
 
 .hvr-underline-from-left:before {
@@ -149,6 +151,25 @@ body {
 
 
 /* 2. HOME PAGE */
+
+/* Home Landing Section */
+
+.home-landing {
+    background-image: url("../images/other/home.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-landing img {
+    margin: auto;
+    width: 30vw;
+}
 
 /* All Recipes Section */
 
@@ -265,10 +286,7 @@ body {
     grid-template-columns: 60% 40%;
     padding: 5%;
     background-color: var(--dark-blue);
-}
-
-.about-image {
-
+    background-attachment: fixed;
 }
 
 .about-text h1 {
@@ -596,8 +614,11 @@ body {
     color: var(--dark-blue);
     font-weight: 600;
     margin-right: 1rem;
-    text-decoration: underline;
-    text-decoration-color: var(--yellow);
+    /* text-decoration: underline;
+    text-decoration-color: var(--yellow); */
+    border-left: 3px solid var(--yellow);
+    padding-left: 0.5em;
+
 }
 
 .recipe-method-steps-list {
@@ -608,7 +629,8 @@ body {
     display: flex;
     align-items: center;
     padding: 0.75rem;
-    margin: 0;;
+    margin: 0;
+
 }
 
 

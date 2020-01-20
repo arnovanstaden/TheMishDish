@@ -85,3 +85,38 @@ function openMenu() {
 
 //  Filter Recipe Categories
 
+$(".home-recipe-categories > p").click(function () {
+  clickedCat = $(this).attr("id");
+  filterCat(clickedCat);
+  $(".home-recipe-categories > p").removeClass("active-recipe-cat");
+  $(this).addClass("active-recipe-cat");
+});
+
+function filterCat(recipeCat) {
+  if (recipeCat == "recipe-cat-all") {
+    $(".home-recipe").fadeIn(500);
+  } else {
+    recipeCat = recipeCat.replace("-cat","");
+    $(".home-recipe").hide();
+    $(`.${recipeCat}`).fadeIn(500);
+  }
+}
+
+// Filter Categories on Load
+
+$(document).ready(function () {
+
+  if (window.location.pathname.split("/").pop() === "index.html") {
+
+    // Get Category Type
+    pageCat = $(location).attr("href");
+
+    // Filter if not "All"
+    if (pageCat.indexOf("#") > 0) {
+      pageCat = pageCat.slice(pageCat.indexOf("#") + 1);
+      filterCat(`recipe-${pageCat}`);
+      $(".home-recipe-categories > p").removeClass("active-recipe-cat");
+      $(`#recipe-cat-${pageCat}`).addClass("active-recipe-cat");
+    }
+  }
+});
