@@ -1,50 +1,31 @@
-// Hide Navbar on Scroll
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementsByClassName("navbar").style.top = "0";
-  } else {
-    document.getElementsByClassName("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
+// Owl Carousel
 
 if (window.location.pathname.split("/").pop() === "recipe.html") {
-
-  // Owl Carousel
 
 
   $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
       loop: true,
       margin: 10,
+      items: 2,
       nav: true,
       responsive: {
-        1000: {
+        576: {
+          items: 3
+        },
+        991: {
+          items: 4
+        },
+        1200: {
           items: 5
         }
       }
     });
-
-    $(".owl-carousel recipe-gallery").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      responsive: {
-        1000: {
-          items: 1
-        }
-      }
-    });
   });
-
 }
 
 
-// Menu Icon
+// Menu 
 
 function openMenu() {
 
@@ -67,9 +48,18 @@ function openMenu() {
 
   } else {
 
-    // Open Menu
-    $(".navbar-content").css("width", "60%");
-    $(".navbar-content").css("opacity", "1");
+    if ($(window).width() <= 768) {
+      // Open Menu
+      $(".navbar-content img").attr("src","./assets/images/icons/navbar-logo.png")
+      $(".navbar-content").css("width", "100%");
+      $(".navbar-content").css("opacity", "1");
+    } else {
+
+      // Open Menu
+      $(".navbar-content").css("width", "60%");
+      $(".navbar-content").css("opacity", "1");
+    }
+
 
     // Toggle Icon Change
     $(".navbar-icon").toggleClass("change");
@@ -96,7 +86,7 @@ function filterCat(recipeCat) {
   if (recipeCat == "recipe-cat-all") {
     $(".home-recipe").fadeIn(500);
   } else {
-    recipeCat = recipeCat.replace("-cat","");
+    recipeCat = recipeCat.replace("-cat", "");
     $(".home-recipe").hide();
     $(`.${recipeCat}`).fadeIn(500);
   }

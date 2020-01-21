@@ -335,6 +335,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .recipe-name {
@@ -350,7 +351,7 @@ body {
 .recipe-description {
     font-family: var(--sans-serif);
     font-weight: 300;
-    padding-right: 20%;
+    padding-right: 15%;
     margin: 0;
 }
 
@@ -358,7 +359,7 @@ body {
     width: 30%;
     height: 2.5px;
     background-color: var(--yellow);
-    margin: 1rem 0;
+    margin: 2% 0;
 }
 
 .recipe-image {
@@ -367,6 +368,20 @@ body {
     background-size: cover;
     position: relative;
     transition: background-image 1s;
+    border-radius: 0 50% 50% 0;
+    z-index: -2;
+}
+
+.recipe-hoop {
+    height: 15vh;
+    width: 100vw;
+    display: none;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    top: -10vh;
+    background-color: white;
+    left: 0;
+    z-index: -1;
 }
 
 
@@ -374,7 +389,7 @@ body {
     display: flex;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: left;
 }
 
 .recipe-arrows>div {
@@ -422,11 +437,11 @@ body {
 .recipe-stats {
     display: flex;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 5%;
 }
 
 .recipe-stats>div {
-    padding: 0 3rem;
+    padding: 0 5%;
     border-right: 1px solid var(--yellow);
 }
 
@@ -465,7 +480,7 @@ body {
 }
 
 .recipe-ingredients {
-    padding-top: 3rem;
+    padding-top: 5%;
     /* padding-right: 5rem; */
 }
 
@@ -485,7 +500,7 @@ body {
 .ingredient-image {
     height: 5rem;
     width: 5rem;
-    border-radius: 20px;
+    border-radius: 50% ;
     background-position: center center;
     background-size: cover;
     box-shadow: 5px 5px 10px 5px #e0e0e0;
