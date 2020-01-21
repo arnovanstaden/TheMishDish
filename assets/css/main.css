@@ -196,8 +196,8 @@ body {
 .home-recipe-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 2.5% 10% 5% 10%;
-    column-gap: 2rem;
+    padding: 3% 7.5% 5% 7.5%;
+    column-gap: 5%;
 }
 
 .home-recipe {
@@ -240,8 +240,8 @@ body {
     background-image: url("../images/recipes/Meat/M001/1.jpg");
     background-size: cover;
     background-position: center center;
-    width: 25vh;
-    height: 25vh;
+    width: 22.5vh;
+    height: 22.5vh;
     border-radius: 20%;
     box-shadow: 8px 8px 10px 5px #d1d1d1;
     margin: auto;
@@ -313,7 +313,8 @@ body {
 }
 
 .about-section img {
-    height: 100%;
+    width: 100%;
+    max-height: 100%;
     margin: auto;
 }
 
