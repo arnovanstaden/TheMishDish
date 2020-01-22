@@ -181,4 +181,13 @@
     .recipe-method h1 {
         font-size: 2.5rem;
     }
+
+    .home-recipe-categories {
+        flex-wrap: wrap;
+        padding: 2.5% 5%;
+    }
+
+    .home-recipe-categories p {
+        margin: 3% 5%;
+    }
 }
