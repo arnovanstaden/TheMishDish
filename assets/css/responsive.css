@@ -1,3 +1,13 @@
+/* Set Variables */
+
+:root {
+    --serif: "Cormorant";
+    --sans-serif: "Montserrat";
+    --dark-blue: #213242;
+    --light-blue: #EDF1FE;
+    --yellow: #E7B90C;
+}
+
 @media screen and (max-width: 1200px) {
     /* home Page */
 
@@ -20,6 +30,10 @@
 
     /* home Page */
 
+    .navbar-icon .bar {
+        background-color: var(--yellow) !important;
+    }
+
     .home-recipe-grid {
         grid-template-columns: repeat(2, 1fr);
         padding: 5% 5%;
@@ -32,6 +46,7 @@
         grid-template-rows: 1fr 0.5fr;
         text-align: center;
         padding: 10% 5%;
+        row-gap: 1rem;
     }
 
     .about-text .divider-line {
@@ -104,7 +119,7 @@
     /* navbar */
 
     .navbar-content img {
-        width: 75%;
+        width: 65%;
     }
 
     .navbar-links>div {
