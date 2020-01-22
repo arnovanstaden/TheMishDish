@@ -307,15 +307,16 @@ body {
 .about-text p {
     color: var(--light-blue);
     font-weight: 300;
-    line-height: 2;
+    line-height: 1.5;
     font-size: 1rem;
     padding-right: 5%;
 }
 
-.about-section img {
-    width: 100%;
-    max-height: 100%;
-    margin: auto;
+.about-image {
+    background-image: url("../images/other/about-mish-2.jpg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 

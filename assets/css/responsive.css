@@ -26,6 +26,19 @@
         row-gap: 1rem;
     }
 
+    .about-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        text-align: center;
+        padding: 10% 5%;
+    }
+
+    .about-text .divider-line {
+        margin: 1rem auto;
+        width: 50%;
+    }
+
     /* Recipe Page */
 
     .recipe-intro {
