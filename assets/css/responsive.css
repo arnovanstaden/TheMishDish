@@ -13,13 +13,17 @@
 
     .home-recipe-grid {
         grid-template-columns: repeat(3, 1fr);
-        padding: 5% 7.5%;
+        padding: 5% 5%;
         column-gap: 5%;
     }
 
     .home-recipe-image {
         width: 20vh;
         height: 20vh;
+    }
+
+    .home-landing img {
+        width: 37.5vw;
     }
 
 }
@@ -29,6 +33,16 @@
 @media screen and (max-width: 768px) {
 
     /* home Page */
+
+    .home-landing img {
+        width: 45vw;
+    }
+
+    .home-landing {
+        background-image: url("../images/other/home-mobile.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
 
     .navbar-icon .bar {
         background-color: var(--yellow) !important;
@@ -131,6 +145,12 @@
 @media screen and (max-width: 576px) {
 
     /* home Page */
+
+
+
+    .home-landing img {
+        width: 60vw;
+    }
 
     .home-recipe-grid {
         grid-template-columns: 1fr;
