@@ -79,6 +79,13 @@
 
 @font-face {
     font-family: "Montserrat";
+    src: url("./fonts/Montserrat/Montserrat-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
     src: url("./fonts/Montserrat/Montserrat-SemiBold.ttf");
     font-weight: 600;
 }

@@ -77,7 +77,7 @@ else if (window.location.pathname == "/recipe.html") {
 
 
     // Set Landing Image
-    $(".recipe-image").css("background-image",`url('../assets/images/recipes/${recipeType}/${recipeNo}/1.jpg')`);
+    $(".recipe-image").css("background-image", `url('../assets/images/recipes/${recipeType}/${recipeNo}/1.jpg')`);
 
     // Insert Recipe Details
 
@@ -98,15 +98,28 @@ else if (window.location.pathname == "/recipe.html") {
             $(".recipe-cook").html(recipe.CookTime);
             $(".recipe-ing-count").html(recipe.Ingredients.length);
 
-            // Serving Suggestions
-            if (recipe.ServingSuggestion == "") {
-                $(".serving-suggestion").hide()
-            } else {
-                $(".recipe-serving-suggestion").html(recipe.ServingSuggestion);
-            }
-            
+            // Ingredient List
+            let ingredientList = recipe.IngredientList;
 
-            //  Insert Method Steps
+            for (i = 0; i < ingredientList.length; i++) {
+                let ingredientListImages = ingredientList;
+                ingredientListImages[i] = ingredientListImages[i].toLowerCase();
+                ingredientListImages[i] = ingredientListImages[i].replace(" ", "-");
+                let ingredientImage = `url("./assets/images/ingredients/${ingredientListImages[i]}.jpg")`
+
+                $(".recipe-ingredients").append(
+                    `<div class="ingredient">\
+                        <div class="ingredient-image" id="ing-${ingredientListImages[i]}"></div>\
+                        <h5 class="ingredient-name"> ${ingredientList[i]} </h5>\
+                    </div>`
+                );
+
+                $(`#ing-${ingredientListImages[i]}`).css("background-image", ingredientImage);
+            }
+
+
+
+            //  Insert Ingredients
 
             for (i = 0; i < recipe.Ingredients.length; i++) {
                 $(".ingredients-list").append(
@@ -125,6 +138,13 @@ else if (window.location.pathname == "/recipe.html") {
                 );
             }
 
+            // Serving Suggestions
+            if (recipe.ServingSuggestion == "") {
+                $(".serving-suggestion").hide()
+            } else {
+                $(".recipe-serving-suggestion").html(recipe.ServingSuggestion);
+            }
+
             //  Recipe Images
             let imageCount = recipe.ImageCount;
 
@@ -135,14 +155,14 @@ else if (window.location.pathname == "/recipe.html") {
             let imageClickCount = 1;
 
             $(".image-order").html(`${imageClickCount} / ${imageCount}`)
-            
-            $(".next-image").click(()=> {
+
+            $(".next-image").click(() => {
                 imageClickCount++;
-                if(imageClickCount > imageCount) {
-                    imageClickCount =1;
+                if (imageClickCount > imageCount) {
+                    imageClickCount = 1;
                 }
                 let recipeImage = `url("../assets/images/recipes/${recipeType}/${recipeNo}/${imageClickCount}.jpg")`;
-                $(".recipe-image").css("background-image",recipeImage);
+                $(".recipe-image").css("background-image", recipeImage);
                 $(".image-order").html(`${imageClickCount} / ${imageCount}`)
             });
 
@@ -152,4 +172,3 @@ else if (window.location.pathname == "/recipe.html") {
     xhttp.open("GET", "./assets/js/recipes.json", true);
     xhttp.send();
 }
-

@@ -352,9 +352,12 @@ body {
 
 .recipe-description {
     font-family: var(--sans-serif);
-    font-weight: 300;
+    font-weight: 500;
+    font-style: italic;
     padding-right: 15%;
+    padding-top: 0.5rem;
     margin: 0;
+    color: var(--dark-blue);
 }
 
 .recipe-info>.divider-line {
@@ -515,31 +518,6 @@ body {
     padding: 0 1rem;
     text-align: center;
 }
-
-#ing-white-onion {
-    background-image: url("../images/ingredients/white-onion.jpg");
-}
-
-#ing-chicken-breasts {
-    background-image: url("../images/ingredients/chicken-breasts.jpg");
-}
-
-#ing-brocolli {
-    background-image: url("../images/ingredients/brocolli.jpg");
-}
-
-#ing-basil-pesto {
-    background-image: url("../images/ingredients/basil-pesto.jpg");
-}
-
-#ing-spagetti {
-    background-image: url("../images/ingredients/spagetti.jpg");
-}
-
-#ing-rosa-tomatoes {
-    background-image: url("../images/ingredients/rosa-tomatoes.jpg");
-}
-
 
 /* Recipe Method */
 

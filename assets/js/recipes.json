@@ -10,6 +10,14 @@
             "handful of spaghetti pasta",
             "5 rosa tomatoes"
         ],
+        "IngredientList": [
+            "Chicken Breasts",
+            "Brocolli",
+            "Onion",
+            "Basil Pesto",
+            "Pasta",
+            "Rosa Tomatoes"
+        ],
         "Method": [
             "In a frying pan with some olive oil, first fry your onion and chicken, seasoning with some salt and pepper. ",
             "Once browned, add your finely chopped broccoli. ",
@@ -36,6 +44,14 @@
             "tablespoon of roasted sunflower seeds",
             "tablespoon of roasted pumpkin seeds",
             "soya sauce (preferably a thicker one)"
+        ],
+        "IngredientList": [
+            "Spinach",
+            "peppers",
+            "Chicken Breasts",
+            "Avocado",
+            "seeds",
+            "soy-sauce"
         ],
         "Method": [
             "Cut your red pepper ‘julienne’ style, and your chicken breasts into small chunks. ",
@@ -66,6 +82,17 @@
             "1 can of coconut milk",
             "2 cups of frozen peas",
             "3 cups of basmati rice"
+        ],
+        "IngredientList": [
+            "garlic",
+            "ginger",
+            "peppers",
+            "onion",
+            "chicken breasts",
+            "curry-paste",
+            "coconut",
+            "peas",
+            "rice"
         ],
         "Method": [
             "1. Slice up your onion and start to fry in your pot. [Side note, from beginning to start you should keep your pot on low heat]. ",
@@ -124,6 +151,14 @@
             "handful of rocket leaves",
             "sprinkle of feta cheese",
             "1 / 2 avocado"
+        ],
+        "IngredientList": [
+            "bread",
+            "asparagus",
+            "onion",
+            "rocket",
+            "cheese",
+            "avocado"
         ],
         "Method": [
             "1. On your toasted rye bread, mash up your avocado and season with salt & pepper. ",
