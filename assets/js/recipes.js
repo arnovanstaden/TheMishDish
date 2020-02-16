@@ -1,11 +1,22 @@
  var recipeNo = window.location.hash; //Get Recipe Name
 
  recipeNo = recipeNo.substr(1); //Remove #
+ recipeType = "";
+
+ if (recipeNo.substr(0, 1) == "M") {
+     recipeType = "Meat";
+ } else if (recipeNo.substr(0, 2) == "VT") {
+     recipeType = "Vegetarian";
+ } else {
+     recipeType = "Vegan";
+ }
+
+ recipeType = recipeType.toLowerCase();
 
 
  // Set Landing Images
- var recipeImage1 = "url('../assets/images/recipes/meat/" + recipeNo + "/1.jpg')";
- var recipeImage2 = "url('../assets/images/recipes/meat/" + recipeNo + "/2.jpg')";
+ var recipeImage1 = `url('../assets/images/recipes/${recipeType}/${recipeNo}/1.jpg')`;
+ var recipeImage2 = `url('../assets/images/recipes/${recipeType}/${recipeNo}/2.jpg')`;
 
  // Insert Recipe Details
 
@@ -23,8 +34,8 @@
          $(".recipe-name").html(recipe.Name);
          $(".recipe-description").html(recipe.Description);
          $(".recipe-serving").html(recipe.Serving);
-         $(".recipe-minutes").html(recipe.Minutes);
-         $(".recipe-calories").html(recipe.Calories);
+         $(".recipe-prep").html(recipe.PrepTime);
+         $(".recipe-cook").html(recipe.CookTime);
          $(".recipe-ing-count").html(recipe.Ingredients.length);
 
          //  Insert Method Steps
@@ -57,8 +68,5 @@
      }
  };
 
- xhttp.open("GET", "./assets/js/meat.json", true);
+ xhttp.open("GET", "./assets/js/recipes.json", true);
  xhttp.send();
-
-
-

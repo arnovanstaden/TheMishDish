@@ -79,6 +79,7 @@
         height: 60vh;
         border-radius: 0;
         width: 100vw;
+        z-index: -2;
     }
 
     .recipe-arrows {
@@ -128,6 +129,7 @@
 
     .recipe-hoop {
         display: block;
+        z-index: -1;
     }
 
     /* navbar */

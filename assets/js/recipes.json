@@ -1,11 +1,11 @@
 {
-    "M001": {
+    "M1": {
         "Name": "Chicken & Brocolli Pesto Pasta",
         "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis voluptas optio ullam dicta repellendus totam, aperiam labore.",
         "Ingredients": ["1 Chicken Breast",
             "1/4 normal sized store bought broccoli (finely chopped)",
             "1/4 white onion",
-            "2 heaped tablespoons of basil pesto (below instructions on how to make home-made",
+            "2 heaped tablespoons of basil pesto (below instructions on how to make home-made)",
             "spaghetti pasta",
             "rosa tomatoes"
         ],
@@ -19,11 +19,11 @@
             "Serve above mixture on a bed of spaghetti pasta, accompanied by some fresh rosa tomatoes cut in halves.Delish!"
         ],
         "Servings": "1",
-        "Minutes": "40",
-        "Calories": "225",
+        "Prep Time": "40",
+        "Cook Time": "225",
         "ImageCount": "2"
     },
-    "M002": {
+    "M2": {
         "Name": "Soya Chicken & Avo Bowl",
         "Description": "   ",
         "Ingredients": [
@@ -43,11 +43,11 @@
             "Add your avo and your roasted seeds and viola!"
         ],
         "Servings": "1",
-        "Minutes": "  ",
-        "Calories": "  ",
+        "Prep Time": "40",
+        "Cook Time": "225",
         "ImageCount": "2"
     },
-    "M003": {
+    "M3": {
         "Name": "Thai Green Curry & Peppers Chicken",
         "Description": "   ",
         "Ingredients": [
@@ -78,8 +78,8 @@
             "In a bowl, serve rice, curry and your sambals - viola!"
         ],
         "Servings": "3-4",
-        "Minutes": "  ",
-        "Calories": "  ",
+        "PrepTime": "40",
+        "CookTime": "225",
         "ImageCount": "2"
     },
     "M004": {

@@ -237,7 +237,7 @@ body {
 }
 
 .home-recipe-image {
-    background-image: url("../images/recipes/Meat/M001/1.jpg");
+    background-image: url("../images/recipes/Meat/M1/1.jpg");
     background-size: cover;
     background-position: center center;
     width: 22.5vh;
@@ -268,14 +268,14 @@ body {
     box-shadow: 8px 8px 8px 8px rgba(33, 50, 66, 0.3);
 }
 
-#M001 > .home-recipe-image {
-    background-image: url("../images/recipes/Meat/M001/1.jpg");
+#M1 > .home-recipe-image {
+    background-image: url("../images/recipes/Meat/M1/1.jpg");
 }
-#M002 > .home-recipe-image {
-    background-image: url("../images/recipes/Meat/M002/1.jpg");
+#M2 > .home-recipe-image {
+    background-image: url("../images/recipes/Meat/M2/1.jpg");
 }
-#M003 > .home-recipe-image {
-    background-image: url("../images/recipes/Meat/M003/1.jpg");
+#M3 > .home-recipe-image {
+    background-image: url("../images/recipes/Meat/M3/1.jpg");
 }
 
 
@@ -371,7 +371,6 @@ body {
     position: relative;
     transition: background-image 1s;
     border-radius: 0 50% 50% 0;
-    z-index: -2;
 }
 
 .recipe-hoop {
@@ -383,7 +382,6 @@ body {
     top: -10vh;
     background-color: white;
     left: 0;
-    z-index: -1;
 }
 
 
@@ -391,7 +389,7 @@ body {
     display: flex;
     position: absolute;
     bottom: 0;
-    right: left;
+    left: 0;
 }
 
 .recipe-arrows>div {
