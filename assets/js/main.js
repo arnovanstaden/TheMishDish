@@ -7,17 +7,17 @@ if (window.location.pathname.split("/").pop() === "recipe.html") {
     $(".owl-carousel").owlCarousel({
       loop: true,
       margin: 10,
-      items: 2,
+      items: 2.5,
       nav: true,
       responsive: {
         576: {
-          items: 3
+          items: 3.5
         },
         991: {
-          items: 4
+          items: 4.5
         },
         1200: {
-          items: 5
+          items: 5.5
         }
       }
     });

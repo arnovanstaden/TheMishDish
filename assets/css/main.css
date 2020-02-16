@@ -365,7 +365,6 @@ body {
 }
 
 .recipe-image {
-    /* background-image: url("../images/recipes//Meat/M001/1.jpg"); */
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -414,8 +413,12 @@ body {
     transition: 0.4s;
 }
 
-.recipe-arrows>div:nth-child(1) {
-    margin-right: 2px;
+.image-order{
+    margin: 0 2px;
+    color: var(--light-blue);
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    transition: 0.4s;
 }
 
 .recipe-serving {
@@ -568,6 +571,25 @@ body {
     height: 2.5px;
     background-color: var(--yellow);
     margin: 1rem auto;
+}
+
+.serving-suggestion h2{
+    color: var(--dark-blue);
+    font-family: var(--serif);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.serving-suggestion {
+    text-align: center;
+}
+
+.serving-suggestion p {
+    font-style: italic;
+
 }
 
 .ingredients-list {

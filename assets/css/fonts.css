@@ -30,6 +30,13 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "Cormorant";
+    src: url("./fonts/Cormorant/Cormorant-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
 
 /* SANS-SERIF - Montserrat */
 
@@ -55,6 +62,13 @@
     font-family: "Montserrat";
     src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
     font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat/Montserrat-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {

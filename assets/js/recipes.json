@@ -1,31 +1,33 @@
 {
     "M1": {
         "Name": "Chicken & Brocolli Pesto Pasta",
-        "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis voluptas optio ullam dicta repellendus totam, aperiam labore.",
-        "Ingredients": ["1 Chicken Breast",
-            "1/4 normal sized store bought broccoli (finely chopped)",
-            "1/4 white onion",
-            "2 heaped tablespoons of basil pesto (below instructions on how to make home-made)",
-            "spaghetti pasta",
-            "rosa tomatoes"
+        "Description": "Fresh and light pasta, perfect for lunch or dinner!",
+        "Ingredients": [
+            "1 chicken breast(cut into small chunks)",
+            "1 / 4 of a normal sized store bought broccoli(finely chopped)",
+            "1 / 4 white onion",
+            "2 heaped tablespoons of basil pesto",
+            "handful of spaghetti pasta",
+            "5 rosa tomatoes"
         ],
         "Method": [
-            "Heat some olive oil in a frying pan.",
-            "Fry your onion and chicken, seasoning with some salt and pepper.",
-            "Once browned, add your finely chopped broccoli",
-            "Whilst frying, season with chilli flakes / paprika.",
-            "Add your basil pesto.",
-            "Fry for about another 5 - 10 minutes until the whole mixture looks slightly brownish and crispy.",
-            "Serve above mixture on a bed of spaghetti pasta, accompanied by some fresh rosa tomatoes cut in halves.Delish!"
+            "In a frying pan with some olive oil, first fry your onion and chicken, seasoning with some salt and pepper. ",
+            "Once browned, add your finely chopped broccoli. ",
+            "Whilst frying above mixture, season with chilli flakes/paprika. ",
+            "Add your basil pesto. ",
+            "Fry for about another 5-10 minutes until the whole mixture looks slightly brownish and crispy (YUM).",
+            "Serve above mixture on a bed of spaghetti pasta, accompanied by some fresh rosa tomatoes cut in halves."
         ],
         "Servings": "1",
-        "Prep Time": "40",
-        "Cook Time": "225",
-        "ImageCount": "2"
+        "PrepTime": "10",
+        "CookTime": "15",
+        "ImageCount": "1",
+        "ServingSuggestion": "",
+        "AddOnID": "AO1"
     },
     "M2": {
         "Name": "Soya Chicken & Avo Bowl",
-        "Description": "   ",
+        "Description": "Simple healthy dish with few ingredients, super quick to prepare, but still tasty! ",
         "Ingredients": [
             "Handful of baby spinach",
             "1/4 red pepper",
@@ -36,64 +38,252 @@
             "soya sauce (preferably a thicker one)"
         ],
         "Method": [
-            "Cut your red pepper ‘julienne’ style and your chicken breasts into small chunks.",
-            "Heat up in a frying pan with some olive oil and salt & pepper until you can see the chicken is pretty much cooked.",
-            "Then add your soya sauce (at least 1 tablespoon) and mix through thoroughly. Leave aside this mixture.",
-            "In a serving bowl, put your handful of baby spinach in. Then add your chicken mixture (only when cooled down otherwise it will cook your spinach, unless you want that then go ahead when it’ s warm).",
+            "Cut your red pepper ‘julienne’ style, and your chicken breasts into small chunks. ",
+            "Fry up together in a frying pan with some olive oil and salt & pepper until you can see the chicken is browned and cooked. 3. Add your soya sauce (at least 1 tablespoon) and mix through thoroughly.",
+            "In a serving bowl, put your handful of baby spinach in. ",
+            "Add your chicken mixture (only when cooled down otherwise it will cook your spinach, unless you want that then go ahead when it’s warm). ",
             "Add your avo and your roasted seeds and viola!"
         ],
         "Servings": "1",
-        "Prep Time": "40",
-        "Cook Time": "225",
-        "ImageCount": "2"
+        "PrepTime": "2",
+        "CookTime": "10",
+        "ImageCount": "1",
+        "ServingSuggestion": "",
+        "AddOnID": ""
     },
     "M3": {
-        "Name": "Thai Green Curry & Peppers Chicken",
-        "Description": "   ",
+        "Name": "Thai Green Curry",
+        "Description": "A hearty, spicy, and super tasty thai green curry! ",
         "Ingredients": [
             "4 cloves of garlic",
             "1 tablespoon of fresh ginger",
             "1 white onion",
             "1 red pepper",
             "1 yellow pepper",
-            "1 orange pepper",
+            "1 orange / green pepper",
             "4 chicken breasts",
             "thai green curry paste",
             "1 can of coconut milk",
-            "2 handfuls of frozen peas",
+            "2 cups of frozen peas",
             "3 cups of basmati rice"
         ],
         "Method": [
-            "Slice up your onion and start to fry in your pot. [Side note, from beginning to start you should keep your pot on low heat].",
-            "Finely chop your garlic and ginger and add to your onions.",
-            "Cook for about 5-10 minutes until the onions are slightly browning.",
-            "Julienne your peppers (the thinner the slices the better as then they will ‘cook away’ and add a lot of sweetness and flavor to your dish).",
-            "Add to your onions and stir thoroughly.",
-            "Cut your chicken into small slices/chunks and season with salt & pepper.",
-            "Add to your onions & peppers and stir thoroughly.",
-            "Cook until your chicken pieces are white (no red in sight) but not until brown.",
-            "Add your thai green curry paste and stir through thoroughly.",
-            "Add your coconut milk and frozen peas, stir thoroughly and allow to simmer for app 20 minutes.",
-            "Cook your rice while your curry is simmering.",
-            "In a bowl, serve rice, curry and your sambals - viola!"
+            "1. Slice up your onion and start to fry in your pot. [Side note, from beginning to start you should keep your pot on low heat]. ",
+            "2. Finely chop your garlic and ginger and add to your onions. ",
+            "3. Cook for about 5-10 minutes until the onions are slightly browning. ",
+            "4. Julienne your peppers (the thinner the slices the better as then they will ‘cook away’ and add a lot of sweetness and flavor to your dish). ",
+            "5. Add to your onions and stir thoroughly. ",
+            "6. Cut your chicken into small slices/chunks and season with salt & pepper. ",
+            "7. Add to your onions & peppers and stir thoroughly. ",
+            "8. Cook until your chicken pieces are white (no red in sight) but not until brown. ",
+            "9. Add your thai green curry paste and stir through thoroughly. ",
+            "10. Add your coconut milk and frozen peas, stir thoroughly and allow to simmer for app 20 minutes. ",
+            "11. Cook your rice while your curry is simmering. ",
+            "12. In a bowl, serve rice, curry and your sambals - viola!"
         ],
         "Servings": "3-4",
-        "PrepTime": "40",
-        "CookTime": "225",
-        "ImageCount": "2"
+        "PrepTime": "10",
+        "CookTime": "30",
+        "ImageCount": "1",
+        "ServingSuggestion": "I would highly recommend letting your curry cool down slightly before serving. Due it’s spicy nature, if it’s served piping out in temperature, it will be too burny and lose a lot of it’s flavor.",
+        "AddOnID": "AO2"
     },
-    "M004": {
-        "Name": "  ",
-        "Description": "   ",
+
+
+
+    "VT1": {
+        "Name": "Veggie Bowl with Tangy Coriander Dressing",
+        "Description": "A fresh bowl of veggies with a delicious tangy dressing. Perfect for a quick, yet interesting dish!",
         "Ingredients": [
             ""
         ],
         "Method": [
+            "Cut your cabbage into thin slices. ",
+            "Chop your broccoli finely. ",
+            "Cut your onion into small slices. ",
+            "Half your cherry tomatoes. ",
+            "In a frying pan, drizzle olive oil and once heated fry up all the above veggies together. Season with some paprika, salt & pepper. ",
+            "Continue until the veggies are thoroughly cooked and slightly crispy. ",
+            "For your dressing, combine all the ingredients together in one go in a small bowl - use a fork to mix thoroughly.",
+            "To serve, put your veggie mixture in a bowl and drizzle with your dressing - viola!"
+        ],
+        "Servings": "1",
+        "PrepTime": "5",
+        "CookTime": "10",
+        "ImageCount": "2",
+        "ServingSuggestion": "",
+        "AddOnID": ""
+    },
+    "VT2": {
+        "Name": "Health Toast with Asparagus & Avo",
+        "Description": "Fresh and healthy toast, perfect for a light lunch and for asparagus lovers. ",
+        "Ingredients": [
+            "1 slice rye bread toasted",
+            "3 - 4 pieces of asparagus",
+            "1 / 4 white onion",
+            "handful of rocket leaves",
+            "sprinkle of feta cheese",
+            "1 / 2 avocado"
+        ],
+        "Method": [
+            "1. On your toasted rye bread, mash up your avocado and season with salt & pepper. ",
+            "2. Fry up your asparagus and white onion in some olive oil.",
+            "3. Season with paprika.",
+            "4. Add your asparagus mixture to your toast. ",
+            "5. Add your rocket, and sprinkle over your feta. Viola!"
+        ],
+        "Servings": "1",
+        "PrepTime": "5",
+        "CookTime": "10",
+        "ImageCount": "1",
+        "ServingSuggestion": "",
+        "AddOnID": ""
+    },
+    "VT3": {
+        "Name": "Asparagus & Mushroom with Creamy Avo Sauce",
+        "Description": "Zesty, fresh and delicious. This dish is perfect for a tasty and healthy lunch on a hot summers day. ",
+        "Ingredients": [
+            "1 avo",
+            "2 cloves garlic",
+            "1 lemon",
+            "4 tablespoons greek yoghurt",
+            "4 - 5 spears of asparagus",
+            "5 - 6 button mushrooms",
+            "1 / 2 white onion",
+            "Pasta of choice(1 cup)"
+        ],
+        "Method": [
             ""
         ],
+        "Servings": "1",
+        "PrepTime": "10",
+        "CookTime": "15",
+        "ImageCount": "1",
+        "ServingSuggestion": "Would personnaly recommend spaghetti as a pasta - adds to the lightness of the dish. ",
+        "AddOnID": ""
+    },
+    "VT4": {
+        "Name": "White Wine & Garlic Veggie Trio",
+        "Description": "This dish is excellent as a side addition to a protein. I.e. a chicken breast/snitchel, steak, veggie Pattie or anything else your heart desires. It’s got a creamy texture (without having cream in) and has loads of flavor. ",
+        "Ingredients": [
+            "1 eggplant",
+            "1 cup mushrooms",
+            "1 sweet potatoe",
+            "1 / 4 cup white wine",
+            "4 cloves of garlic",
+            "1 x vegetable stock pot",
+            "3 tablespoons of butter"
+        ],
+        "Method": [
+            "Finely chop your garlic and bring to the heat with a table spoon of butter in a frying pan. ",
+            "Dice all your veggies(eggplant, mushrooms & sweet potatoe)",
+            "Add diced veggies to your garlic butter mixture",
+            "Fry until slightly golden brown",
+            "Add your veggie stock, remaining butter, white wine and 1 / 4 cup of boiling water.",
+            "Leave to simmer for 20 minutes / until the sweet potatoes are cooked and the water has disappeared."
+        ],
+        "Servings": "2-3",
+        "PrepTime": "10",
+        "CookTime": "25",
+        "ImageCount": "2",
+        "ServingSuggestion": "Would personnaly recommend spaghetti as a pasta - adds to the lightness of the dish. ",
+        "AddOnID": ""
+    },
+
+
+
+
+
+
+
+
+
+    "V1": {
+        "Name": "Chickpea Health Bowl ",
+        "Description": "This recipe may seem so basic and super super simple! To be honest, the reason why I have included it is to remind myself to make it because every time I do it’s just so wholesome and delicious. ",
+        "Ingredients": [
+            "1/2 can chickpeas",
+            "handful of cos lettuce",
+            "half a handful of cucumber",
+            "5-6 cherry tomatoes",
+            "small handful of red & yellow pepper mixed",
+            "1/4 avo"
+        ],
+        "Method": [
+            "Chop up your vegetables! **I would recommend doing your peppers ‘julienne’ style, ‘shredding’ your lettuce, leaving your cucumber in slightly larger chunks and cutting your cherry tomatoes in half.",
+            "In a serving bowl, first add your lettuce and then the remaining veggies on top.",
+            "In a frying pan, fry up your chickpeas! ** If you have time I would HIGHLY recommend taking the little skins off them.This makes them even more crispier.I am a spice freak so I fry them up in some Spanish smoked paprika and chilli flakes.If spice is not your thing, a simple mixture of salt, pepper and some origanum will do the trick.Fry them up until they nice and brown and crispy.",
+            "Once cooled, add your chickpeas to your veggie bowl.",
+            "Finally, cut up some avocado and add that to the mix.",
+            "Drizzle with balsamic vinegar, olive oil and lemon juice and viola!"
+        ],
+        "Servings": "1",
+        "PrepTime": "10",
+        "CookTime": "5",
+        "ImageCount": "1",
+        "ServingSuggestion": "",
+        "AddOnID": ""
+    },
+    "V2": {
+        "Name": "Chickpea Bake",
+        "Description": "A hearty and warm dish. This dish takes fairly long to make and is not suitable for a ‘come home from work and cook a quick meal’ kind of dish. It takes time and has a few different elements to it. I would recommend cooking this if you have the afternoon free. It will be great for entertaining guests in an affordable, healthy way :) ",
+        "Ingredients": [
+            "1 small sweet potato (cubed)",
+            "1/4 green pepper",
+            "1/4 red pepper",
+            "2 whole tomatoes (cubed) ",
+            "1 fresh chilli",
+            "2 garlic cloves",
+            "2 sprigs of fresh rosemary",
+            "1 small tin of tomato paste",
+            "few splashes of red wine",
+            "1 tin chickpeas",
+            "1 tin button mushrooms (or fresh mushrooms) ",
+            "1 small aubergine"
+        ],
+        "Method": [
+            "In a small pot, boil your sweet potatoes until soft then drain and set aside when complete. ",
+            "In a pan, over low heat, cook together the following: your peppers, tomatoes, chilli, garlic, rosemary, tomato paste & red wine. Season with salt & pepper. **don’t worry about chopping your chilli/garlic as you will be blending this mixture. ",
+            "Allow the above mixture to simmer until all the veggies are nice and soft. ",
+            "Once the tomato mixture and your potatoes are ready - add them together into a blender and blend until you get a nice thick, orangey tomato based soup.**If you give it a taste, it should taste like a delicious sweet potato tomato soup that’s ready to go. Set this aside for now. ",
+            "In the same pan you used for the mixture, fry up your chickpeas and mushrooms together with some paprika to season. Fry until they are slightly browning. ",
+            "In an oven dish, pour your sweet potato and tomato mixture in, followed by your chickpeas & mushrooms. Mix together thoroughly. ",
+            "To finish, slice your aubergine into thin round slices and put on top of your chickpea mixture. Season with some basil if you have. If not, some black pepper will do just fine :) ",
+            " Bake in the oven for +- 30 minutes at 180degrees. Your aubergine should be nice and brown and crispy. Viola!"
+        ],
         "Servings": "3-4",
-        "Minutes": "  ",
-        "Calories": "  ",
-        "ImageCount": "2"
+        "PrepTime": "20",
+        "CookTime": "30",
+        "ImageCount": "4",
+        "ServingSuggestion": "",
+        "AddOnID": ""
+    },
+    "V4": {
+        "Name": "Lentil Spaghetti Bolognese",
+        "Description": "My own vegan spin on spaghetti bolegnese!",
+        "Ingredients": [
+            "2 carrots",
+            "1 large onion",
+            "3 cloves of garlic",
+            "2 tomatoes (diced)",
+            "1/2 can tomatoe paste",
+            "2 vegetable stock pots",
+            "1 cup red split lentils",
+            "1/3 cup white wine "
+        ],
+        "Method": [
+            "Finely chop your onion  and garlic and start to fry in some olive oil on medium heat. ",
+            "Once the onions start to brown, grate your carrots, and add to the onions.",
+            "After about 5 minutes of stirring, add your chopped tomatoes, and paprika, salt & pepper for seasoning.",
+            "Once the veggies are cooked and browned, add your remaining ingredients(tomatoe paste, veggie stock, lentils & white wine) along with 2 cups of water.",
+            "Bring to a boil and then allow to simmer for approximately 15 - 20 minutes until the mixture thickens, and the lentils are cooked.",
+            "Once step 5 is complete, serve with spaghetti noodles and viola!"
+        ],
+        "Servings": "4",
+        "PrepTime": "10",
+        "CookTime": "25",
+        "ImageCount": "1",
+        "ServingSuggestion": "",
+        "AddOnID": ""
     }
 }
