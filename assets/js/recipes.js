@@ -1,6 +1,5 @@
 // Run on Home Page
-if (window.location.pathname == "/index.html") {
-
+if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
     // Insert Recipes
 
     // JSON
