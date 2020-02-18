@@ -40,7 +40,7 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "/"
                 );
 
                 // Change Image
-                $(`#${recipeNo} > .home-recipe-image `).css("background-image", `url("./assets/images/recipes/${recipeType}/${recipeNo}/1.jpg")`);
+                $(`#${recipeNo} > .home-recipe-image `).css("background-image", `url("./assets/images/recipes/${recipeType}/${recipeNo}/t1.jpg")`);
             }
 
 
