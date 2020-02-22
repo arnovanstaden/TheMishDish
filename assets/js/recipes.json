@@ -124,11 +124,32 @@
     "VT1": {
         "Name": "Veggie Bowl with Tangy Coriander Dressing",
         "Description": "A fresh bowl of veggies with a delicious tangy dressing. Perfect for a quick, yet interesting dish!",
-        "Ingredients": [
-            ""
-        ],
+        "Ingredients": {
+            "Veggies": [
+                "handful of broccoli",
+                "handful of white cabbage",
+                "1/4 white onion",
+                "5-6 cherry tomatoes"
+            ],
+            "Dressing": [
+                "2 tablespoons greek yoghurt",
+                "juice from 1/2 lemon",
+                "1 teaspoon apple cider vinegar",
+                "1 tablespoon cottage cheese",
+                "1 tablespoon chopped coriander",
+                "salt & pepper"
+            ]
+        },
         "IngredientList": [
-            ""
+            "Brocolli",
+            "Cabbage",
+            "Onion",
+            "Rosa Tomatoes",
+            "Yogurt",
+            "Lemon",
+            "Vinegar",
+            "Cheese",
+            "Coriander"
         ],
         "Method": [
             "Cut your cabbage into thin slices. ",
@@ -203,9 +224,23 @@
             "Onion",
             "Pasta"
         ],
-        "Method": [
-            ""
-        ],
+        "Method": {
+            "Sauce": [
+                "In a blender, blend the following ingredients: avo, garlic, juice from 1 lemon, greek yoghurt, salt & pepper.",
+                "Blend until nice and creamy yet fluffy.",
+                "You are aiming for a tangy lemony zesty flavor, so add more lemon if needed."
+            ],
+            "Asparagus Mixture": [
+                "1. Cut your onion, asparagus and mushrooms into thin slices.",
+                "2. Try to cut your asparagus‘ julienne’ style.",
+                "3. Add the onion to a frying pan and fry in oil of choice.",
+                "4. After about 5 minutes add your asparagus & mushroom.",
+                "5. Season with paprika & salt and pepper while frying.",
+                "6. Fry for about 5 - 10 minutes until the vegetables are browned.",
+
+                "In a serving bowl, add your sauce and asparagus mixture to your pasta of choice and viola!"
+            ]
+        },
         "Servings": "1",
         "PrepTime": "10",
         "CookTime": "15",

@@ -153,16 +153,16 @@ else if (window.location.pathname == "/recipe.html") {
 
             // Ingredient List
             let ingredientList = recipe.IngredientList;
-            
+
             if (ingredientList != "") { // {Don't create catalogue for empty ingredientLists}
 
                 for (i = 0; i < ingredientList.length; i++) {
-                   
+
                     let ingredientListImages = ingredientList.slice();
                     ingredientListImages[i] = ingredientListImages[i].toLowerCase();
                     ingredientListImages[i] = ingredientListImages[i].replace(" ", "-");
                     let ingredientImage = `url("./assets/images/ingredients/${ingredientListImages[i]}.jpg")`
-                    
+
                     $(".recipe-ingredients").append(
                         `<div class="ingredient">\
                             <div class="ingredient-image" id="ing-${ingredientListImages[i]}"></div>\
@@ -187,13 +187,33 @@ else if (window.location.pathname == "/recipe.html") {
             }
 
             //  Insert Method Steps
+            let methodType = Object.keys(recipe.Method);
+            if (methodType[0] != 0) { // {Check if multiple methods (objects)}
+                let methodKeys = Object.keys(recipe.Method);
+                for (i = 0; i < methodKeys.length; i++) { // {run for every method}
+             
+                    let currentKey = methodKeys[i];
+                    $(".recipe-method-steps-list").append(
+                    `<h2 class='method-sub-heading'> ${currentKey}: </h2>`
+                    )
+                    for (j = 0; j < recipe.Method[currentKey].length; j++) { // {run for every step in method}
+                        $(".recipe-method-steps-list").append(
+                            `<p><span>${j+1}.</span>${recipe.Method[currentKey][j]}</p>`
+                        );
 
-            for (j = 0; j < recipe.Method.length; j++) {
-                $(".recipe-method-steps-list").append(
-                    `<p><span>${j+1}.</span>${recipe.Method[j]}</p>`
-                );
-         
+                    }
+                }
+
+            } else {
+                for (j = 0; j < recipe.Method.length; j++) {
+                    $(".recipe-method-steps-list").append(
+                        `<p><span>${j+1}.</span>${recipe.Method[j]}</p>`
+                    );
+
+                }
             }
+
+
 
             // Serving Suggestions
             if (recipe.ServingSuggestion == "") {
