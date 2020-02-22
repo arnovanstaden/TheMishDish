@@ -1,4 +1,7 @@
-// Run on Home Page
+// HOME PAGE
+
+// Normal Recipes
+
 if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
     // Insert Recipes
 
@@ -31,7 +34,7 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "/"
 
                 // Insert HTML
                 $(".home-recipe-grid").append(
-                    `<a class="home-recipe recipe-meat" id=${recipeNo} href="./recipe.html#${recipeNo}">\
+                    `<a class="home-recipe" id=${recipeNo} href="./recipe.html#${recipeNo}">\
                     <div class="home-recipe-image">\
                         <div class="home-recipe-image-cover"></div>\
                     </div>\
@@ -51,6 +54,55 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "/"
     xhttp.send();
 }
 
+// Add-on Recipes
+if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
+    // Insert Recipes
+
+    // JSON
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            let response = JSON.parse(this.responseText);
+
+            // Get Object Keys
+            const recipeKeys = Object.keys(response);
+
+            // Insert HTML
+            for (i = 0; i < recipeKeys.length; i++) {
+
+                // Get recipe details
+                let recipeNo = recipeKeys[i]
+                let recipe = response[recipeNo]
+                let recipeName = recipe.Name;
+                const recipeType = "Add-on";
+
+                // Insert HTML
+                $(".home-add-on-grid").append(
+                    `<a class="home-recipe" id=${recipeNo} href="./recipe.html#${recipeNo}">\
+                    <div class="home-recipe-image">\
+                        <div class="home-recipe-image-cover"></div>\
+                    </div>\
+                    <h5>${recipeName}</h5>\
+                </a>`
+                );
+
+                // Change Image
+                $(`#${recipeNo} > .home-recipe-image `).css("background-image", `url("./assets/images/recipes/${recipeType}/${recipeNo}/t1.jpg")`);
+            }
+
+
+        }
+    };
+
+    xhttp.open("GET", "./assets/js/add-on-recipes.json", true);
+    xhttp.send();
+}
+
+
+
+// ------------------------------
+
+// RECIPE PAGE
 
 //  Run on Recipe Page
 else if (window.location.pathname == "/recipe.html") {
@@ -68,7 +120,9 @@ else if (window.location.pathname == "/recipe.html") {
         recipeType = "Meat";
     } else if (recipeNo.substr(0, 2) == "VT") {
         recipeType = "Vegetarian";
-    } else {
+    } else if (recipeNo.substr(0, 2) == "AO") {
+        recipeType = "Add-on";
+    } else if (recipeNo.substr(0, 1) == "V") {
         recipeType = "Vegan";
     }
 
@@ -92,31 +146,34 @@ else if (window.location.pathname == "/recipe.html") {
 
             $(".recipe-name").html(recipe.Name);
             $(".recipe-description").html(recipe.Description);
-            $(".recipe-serving").html(recipe.Serving);
+            $(".recipe-serving").html(recipe.Servings);
             $(".recipe-prep").html(recipe.PrepTime);
             $(".recipe-cook").html(recipe.CookTime);
             $(".recipe-ing-count").html(recipe.Ingredients.length);
 
             // Ingredient List
             let ingredientList = recipe.IngredientList;
+            
+            if (ingredientList != "") { // {Don't create catalogue for empty ingredientLists}
 
-            for (i = 0; i < ingredientList.length; i++) {
-                let ingredientListImages = ingredientList;
-                ingredientListImages[i] = ingredientListImages[i].toLowerCase();
-                ingredientListImages[i] = ingredientListImages[i].replace(" ", "-");
-                let ingredientImage = `url("./assets/images/ingredients/${ingredientListImages[i]}.jpg")`
+                for (i = 0; i < ingredientList.length; i++) {
+                   
+                    let ingredientListImages = ingredientList.slice();
+                    ingredientListImages[i] = ingredientListImages[i].toLowerCase();
+                    ingredientListImages[i] = ingredientListImages[i].replace(" ", "-");
+                    let ingredientImage = `url("./assets/images/ingredients/${ingredientListImages[i]}.jpg")`
+                    
+                    $(".recipe-ingredients").append(
+                        `<div class="ingredient">\
+                            <div class="ingredient-image" id="ing-${ingredientListImages[i]}"></div>\
+                            <h5 class="ingredient-name"> ${ingredientList[i]} </h5>\
+                        </div>`
+                    );
 
-                $(".recipe-ingredients").append(
-                    `<div class="ingredient">\
-                        <div class="ingredient-image" id="ing-${ingredientListImages[i]}"></div>\
-                        <h5 class="ingredient-name"> ${ingredientList[i]} </h5>\
-                    </div>`
-                );
+                    $(`#ing-${ingredientListImages[i]}`).css("background-image", ingredientImage);
+                }
 
-                $(`#ing-${ingredientListImages[i]}`).css("background-image", ingredientImage);
             }
-
-
 
             //  Insert Ingredients
 
@@ -135,6 +192,7 @@ else if (window.location.pathname == "/recipe.html") {
                 $(".recipe-method-steps-list").append(
                     `<p><span>${j+1}.</span>${recipe.Method[j]}</p>`
                 );
+         
             }
 
             // Serving Suggestions
@@ -168,6 +226,12 @@ else if (window.location.pathname == "/recipe.html") {
         }
     };
 
-    xhttp.open("GET", "./assets/js/recipes.json", true);
+    if (recipeType == "add-on") {
+        xhttp.open("GET", "./assets/js/add-on-recipes.json", true);
+
+    } else {
+        xhttp.open("GET", "./assets/js/recipes.json", true);
+
+    }
     xhttp.send();
 }

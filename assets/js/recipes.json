@@ -47,11 +47,11 @@
         ],
         "IngredientList": [
             "Spinach",
-            "peppers",
+            "Peppers",
             "Chicken Breasts",
             "Avocado",
-            "seeds",
-            "soy-sauce"
+            "Seeds",
+            "Soy Sauce"
         ],
         "Method": [
             "Cut your red pepper ‘julienne’ style, and your chicken breasts into small chunks. ",
@@ -84,15 +84,15 @@
             "3 cups of basmati rice"
         ],
         "IngredientList": [
-            "garlic",
-            "ginger",
-            "peppers",
-            "onion",
-            "chicken breasts",
-            "curry-paste",
-            "coconut",
-            "peas",
-            "rice"
+            "Garlic",
+            "Ginger",
+            "Peppers",
+            "Onion",
+            "Chicken breasts",
+            "Curry-paste",
+            "Coconut",
+            "Peas",
+            "Rice"
         ],
         "Method": [
             "1. Slice up your onion and start to fry in your pot. [Side note, from beginning to start you should keep your pot on low heat]. ",
@@ -118,10 +118,16 @@
 
 
 
+
+
+
     "VT1": {
         "Name": "Veggie Bowl with Tangy Coriander Dressing",
         "Description": "A fresh bowl of veggies with a delicious tangy dressing. Perfect for a quick, yet interesting dish!",
         "Ingredients": [
+            ""
+        ],
+        "IngredientList": [
             ""
         ],
         "Method": [
@@ -153,12 +159,12 @@
             "1 / 2 avocado"
         ],
         "IngredientList": [
-            "bread",
-            "asparagus",
-            "onion",
-            "rocket",
-            "cheese",
-            "avocado"
+            "Bread",
+            "Asparagus",
+            "Onion",
+            "Rocket",
+            "Cheese",
+            "Avocado"
         ],
         "Method": [
             "1. On your toasted rye bread, mash up your avocado and season with salt & pepper. ",
@@ -187,6 +193,16 @@
             "1 / 2 white onion",
             "Pasta of choice(1 cup)"
         ],
+        "IngredientList": [
+            "Avocado",
+            "Garlic",
+            "Lemon",
+            "Yogurt",
+            "Asparagus",
+            "Mushrooms",
+            "Onion",
+            "Pasta"
+        ],
         "Method": [
             ""
         ],
@@ -208,6 +224,14 @@
             "4 cloves of garlic",
             "1 x vegetable stock pot",
             "3 tablespoons of butter"
+        ],
+        "IngredientList": [
+            "Eggplant",
+            "Mushrooms",
+            "Potato",
+            "White Wine",
+            "Garlic",
+            "Butter"
         ],
         "Method": [
             "Finely chop your garlic and bring to the heat with a table spoon of butter in a frying pan. ",
@@ -233,6 +257,8 @@
 
 
 
+
+
     "V1": {
         "Name": "Chickpea Health Bowl ",
         "Description": "This recipe may seem so basic and super super simple! To be honest, the reason why I have included it is to remind myself to make it because every time I do it’s just so wholesome and delicious. ",
@@ -243,6 +269,14 @@
             "5-6 cherry tomatoes",
             "small handful of red & yellow pepper mixed",
             "1/4 avo"
+        ],
+        "IngredientList": [
+            "Chickpeas",
+            "Lettuce",
+            "Cucumber",
+            "Tomato",
+            "Peppers",
+            "Avocado"
         ],
         "Method": [
             "Chop up your vegetables! **I would recommend doing your peppers ‘julienne’ style, ‘shredding’ your lettuce, leaving your cucumber in slightly larger chunks and cutting your cherry tomatoes in half.",
@@ -274,7 +308,20 @@
             "few splashes of red wine",
             "1 tin chickpeas",
             "1 tin button mushrooms (or fresh mushrooms) ",
-            "1 small aubergine"
+            "1 small eggplant"
+        ],
+        "IngredientList": [
+            "Sweet Potato",
+            "Peppers",
+            "Tomato",
+            "Chili",
+            "Garlic",
+            "Rosemary",
+            "Tomato Paste",
+            "Red Wine",
+            "Chickpeas",
+            "Mushrooms",
+            "Eggplant"
         ],
         "Method": [
             "In a small pot, boil your sweet potatoes until soft then drain and set aside when complete. ",
@@ -305,6 +352,14 @@
             "2 vegetable stock pots",
             "1 cup red split lentils",
             "1/3 cup white wine "
+        ],
+        "IngredientList": [
+            "Carrots",
+            "Onion",
+            "Garlic",
+            "Tomato Paste",
+            "Lentils",
+            "White Wine"
         ],
         "Method": [
             "Finely chop your onion  and garlic and start to fry in some olive oil on medium heat. ",

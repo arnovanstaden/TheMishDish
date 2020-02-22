@@ -173,11 +173,13 @@ body {
 
 /* All Recipes Section */
 
-.home-recipe-section {
+.home-recipe-section,
+.home-add-on-section {
     padding: 2% 0;
 }
 
-.home-recipe-section h1 {
+.home-recipe-section h1,
+.home-add-on-section h1 {
     color: var(--dark-blue);
     font-family: var(--serif);
     font-size: 3rem;
@@ -186,14 +188,15 @@ body {
     letter-spacing: 1px;
 }
 
-.home-recipe-section>.divider-line {
+.home-recipe-section>.divider-line,
+.home-add-on-section>.divider-line {
     width: 15%;
     height: 2.5px;
     background-color: var(--yellow);
     margin: 1rem auto;
 }
 
-.home-recipe-grid {
+.home-recipe-grid, .home-add-on-grid  {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3% 7.5% 5% 7.5%;
@@ -226,12 +229,12 @@ body {
 
 .home-recipe-categories p:hover {
     cursor: pointer;
-    border:  2px solid var(--yellow);
+    border: 2px solid var(--yellow);
     background-color: var(--yellow)
 }
 
 .active-recipe-cat {
-    border:  2px solid var(--dark-blue) !important;
+    border: 2px solid var(--dark-blue) !important;
     background-color: transparent !important;
     color: var(--dark-blue) !important;
 }
@@ -268,13 +271,15 @@ body {
     box-shadow: 8px 8px 8px 8px rgba(33, 50, 66, 0.3);
 }
 
-#M1 > .home-recipe-image {
+#M1>.home-recipe-image {
     background-image: url("../images/recipes/Meat/M1/1.jpg");
 }
-#M2 > .home-recipe-image {
+
+#M2>.home-recipe-image {
     background-image: url("../images/recipes/Meat/M2/1.jpg");
 }
-#M3 > .home-recipe-image {
+
+#M3>.home-recipe-image {
     background-image: url("../images/recipes/Meat/M3/1.jpg");
 }
 
@@ -416,7 +421,7 @@ body {
     transition: 0.4s;
 }
 
-.image-order{
+.image-order {
     margin: 0 2px;
     color: var(--light-blue);
     padding: 0.5rem 0.8rem;
@@ -506,7 +511,7 @@ body {
 .ingredient-image {
     height: 5rem;
     width: 5rem;
-    border-radius: 50% ;
+    border-radius: 50%;
     background-position: center center;
     background-size: cover;
     box-shadow: 5px 5px 10px 5px #e0e0e0;
@@ -551,7 +556,7 @@ body {
     margin: 1rem auto;
 }
 
-.serving-suggestion h2{
+.serving-suggestion h2 {
     color: var(--dark-blue);
     font-family: var(--serif);
     font-size: 2rem;
@@ -647,8 +652,3 @@ body {
     margin: 0;
 
 }
-
-
-
-
-
