@@ -34,7 +34,7 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "/"
 
                 // Insert HTML
                 $(".home-recipe-grid").append(
-                    `<a class="home-recipe" id=${recipeNo} href="./recipe.html#${recipeNo}">\
+                    `<a class="home-recipe recipe-${recipeType.toLowerCase()}" id="${recipeNo}" href="./recipe.html#${recipeNo}">\
                     <div class="home-recipe-image">\
                         <div class="home-recipe-image-cover"></div>\
                     </div>\
@@ -78,8 +78,8 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "/"
 
                 // Insert HTML
                 $(".home-add-on-grid").append(
-                    `<a class="home-recipe" id=${recipeNo} href="./recipe.html#${recipeNo}">\
-                    <div class="home-recipe-image">\
+                    `<a class="home-recipe" id="${recipeNo}"  href="./recipe.html#${recipeNo}">\
+                    <div class="home-recipe-image"  >\
                         <div class="home-recipe-image-cover"></div>\
                     </div>\
                     <h5>${recipeName}</h5>\
@@ -130,7 +130,7 @@ else if (window.location.pathname == "/recipe.html") {
 
 
     // Set Landing Image
-    $(".recipe-image").css("background-image", `url('../assets/images/recipes/${recipeType}/${recipeNo}/1.jpg')`);
+    $(".recipe-image").css("background-image", `url('./assets/images/recipes/${recipeType}/${recipeNo}/1.jpg')`);
 
     // Insert Recipe Details
 

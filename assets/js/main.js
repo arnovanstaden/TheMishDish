@@ -83,10 +83,11 @@ $(".home-recipe-categories > p").click(function () {
 
 function filterCat(recipeCat) {
   if (recipeCat == "recipe-cat-all") {
-    $(".home-recipe").fadeIn(500);
+    $(".home-recipe-grid > a").fadeIn(500);
   } else {
     recipeCat = recipeCat.replace("-cat", "");
-    $(".home-recipe").hide();
+    $(".home-recipe-grid > a").hide();
+    console.log(recipeCat)
     $(`.${recipeCat}`).fadeIn(500);
   }
 }

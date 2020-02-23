@@ -237,7 +237,6 @@ body {
 }
 
 .home-recipe-image {
-    background-image: url("../images/recipes/Meat/M1/1.jpg");
     background-size: cover;
     background-position: center center;
     width: 22.5vh;
@@ -268,17 +267,6 @@ body {
     box-shadow: 8px 8px 8px 8px rgba(33, 50, 66, 0.3);
 }
 
-#M1>.home-recipe-image {
-    background-image: url("../images/recipes/Meat/M1/1.jpg");
-}
-
-#M2>.home-recipe-image {
-    background-image: url("../images/recipes/Meat/M2/1.jpg");
-}
-
-#M3>.home-recipe-image {
-    background-image: url("../images/recipes/Meat/M3/1.jpg");
-}
 
 
 /* About Section */
