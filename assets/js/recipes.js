@@ -176,25 +176,49 @@ else if (window.location.pathname == "/recipe.html") {
             }
 
             //  Insert Ingredients
+            let ingredientType = Object.keys(recipe.Ingredients);
+            if (ingredientType[0] != 0) { // {Check if multiple methods (objects)}
+                let ingredientKeys = Object.keys(recipe.Ingredients);
+                for (i = 0; i < ingredientKeys.length; i++) { // {run for every method}
 
-            for (i = 0; i < recipe.Ingredients.length; i++) {
-                $(".ingredients-list").append(
-                    `<div> \
-                      <img src="./assets/images/icons/list-bullet.png"> \
-                      <p> ${recipe.Ingredients[i]}</p> \
-                      </div>`
-                );
+                    let currentKey = ingredientKeys[i];
+                    $(".ingredients-list").append(
+                        `<h2 class='ingredient-sub-heading'> ${currentKey}: </h2>`
+                    )
+                    for (j = 0; j < recipe.Ingredients[currentKey].length; j++) { // {run for every step in method}
+                        $(".ingredients-list").append(
+                            `<div> \
+                            <img src="./assets/images/icons/list-bullet.png"> \
+                            <p>${recipe.Ingredients[currentKey][j]}</p> \
+                            </div>`
+                        );
+
+                    }
+                }
+
+            } else {
+                for (i = 0; i < recipe.Ingredients.length; i++) {
+                    $(".ingredients-list").append(
+                        `<div> \
+                          <img src="./assets/images/icons/list-bullet.png"> \
+                          <p> ${recipe.Ingredients[i]}</p> \
+                          </div>`
+                    );
+                }
             }
+
+
+
 
             //  Insert Method Steps
             let methodType = Object.keys(recipe.Method);
             if (methodType[0] != 0) { // {Check if multiple methods (objects)}
                 let methodKeys = Object.keys(recipe.Method);
                 for (i = 0; i < methodKeys.length; i++) { // {run for every method}
-             
+
                     let currentKey = methodKeys[i];
                     $(".recipe-method-steps-list").append(
-                    `<h2 class='method-sub-heading'> ${currentKey}: </h2>`
+                        `<h2 class='method-sub-heading'> ${currentKey}: </h2>`
                     )
                     for (j = 0; j < recipe.Method[currentKey].length; j++) { // {run for every step in method}
                         $(".recipe-method-steps-list").append(
@@ -242,6 +266,16 @@ else if (window.location.pathname == "/recipe.html") {
                 $(".recipe-image").css("background-image", recipeImage);
                 $(".image-order").html(`${imageClickCount} / ${imageCount}`)
             });
+
+
+            // Add-On Recipes
+            if (recipe.AddOnID != "") { // {Check if add-on recipe exists}
+
+                $(".ingredients-list").append(
+                    `<h2 class='ingredient-sub-heading'> ${recipe.AddOnName}: </h2> \
+                    <a href='./recipe.html#${recipe.AddOnID}' target="blank">Click here for the recipe</a>`
+                );
+            }
 
         }
     };

@@ -31,7 +31,8 @@
         "CookTime": "15",
         "ImageCount": "1",
         "ServingSuggestion": "",
-        "AddOnID": "AO1"
+        "AddOnID": "AO1",
+        "AddOnName": "Basil Pesto"
     },
     "M2": {
         "Name": "Soya Chicken & Avo Bowl",
@@ -113,7 +114,8 @@
         "CookTime": "30",
         "ImageCount": "1",
         "ServingSuggestion": "I would highly recommend letting your curry cool down slightly before serving. Due it’s spicy nature, if it’s served piping out in temperature, it will be too burny and lose a lot of it’s flavor.",
-        "AddOnID": "AO2"
+        "AddOnID": "AO2",
+        "AddOnName": "Sambals"
     },
 
 

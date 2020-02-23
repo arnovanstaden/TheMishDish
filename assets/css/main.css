@@ -158,7 +158,6 @@ body {
     background-position: center center;
     width: 100vw;
     height: 100vh;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -520,6 +519,38 @@ body {
     font-size: 0.9rem;
     padding: 0 1rem;
     text-align: center;
+}
+
+.ingredient-sub-heading {
+    color: var(--light-blue);
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+    text-align: center;
+    -moz-text-decoration-color: var(--yellow);
+    margin-top: 3rem;
+}
+
+.ingredients-list> a {
+    color: var(--light-blue);
+    text-decoration: none;
+    text-align: center !important;
+    display: block;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.ingredients-list> a:hover {
+    color: var(--yellow);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 /* Recipe Method */
