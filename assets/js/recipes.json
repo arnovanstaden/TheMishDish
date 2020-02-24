@@ -113,7 +113,7 @@
         "PrepTime": "10",
         "CookTime": "30",
         "ImageCount": "1",
-        "ServingSuggestion": "I would highly recommend letting your curry cool down slightly before serving. Due it’s spicy nature, if it’s served piping out in temperature, it will be too burny and lose a lot of it’s flavor.",
+        "ServingSuggestion": "I would highly recommend letting your curry cool down slightly before serving. Due it’s spicy nature, if it’s served piping hot in temperature, it will be too burny and lose a lot of it’s flavor.",
         "AddOnID": "AO2",
         "AddOnName": "Sambals"
     },
@@ -186,7 +186,7 @@
             "Asparagus",
             "Onion",
             "Rocket",
-            "Cheese",
+            "Feta Cheese",
             "Avocado"
         ],
         "Method": [
@@ -282,7 +282,7 @@
         "PrepTime": "10",
         "CookTime": "25",
         "ImageCount": "2",
-        "ServingSuggestion": "Would personnaly recommend spaghetti as a pasta - adds to the lightness of the dish. ",
+        "ServingSuggestion": "",
         "AddOnID": ""
     },
 

@@ -1,3 +1,37 @@
+// OWL CAROUSEL
+function loadCarousel() {
+    $(".owl-carousel").owlCarousel({
+        margin: 10,
+        responsiveClass: true,
+        items: 2,
+        nav:true,
+        responsive: {
+            576: {
+                items: 3
+            },
+            991: {
+                items: 4
+            },
+            1200: {
+                items: 5
+            }
+        }
+    });
+}
+
+$('.owl-next').click(function() {
+    $(".owl-carousel").trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('.owl-prev').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    $(".owl-carousel").trigger('prev.owl.carousel', [300]);
+})
+
+
+
+
 // HOME PAGE
 
 // Normal Recipes
@@ -164,7 +198,7 @@ else if (window.location.pathname == "/recipe.html") {
                     let ingredientImage = `url("./assets/images/ingredients/${ingredientListImages[i]}.jpg")`
 
                     $(".recipe-ingredients").append(
-                        `<div class="ingredient">\
+                        `<div class="ingredient item">\
                             <div class="ingredient-image" id="ing-${ingredientListImages[i]}"></div>\
                             <h5 class="ingredient-name"> ${ingredientList[i]} </h5>\
                         </div>`
@@ -289,3 +323,6 @@ else if (window.location.pathname == "/recipe.html") {
     }
     xhttp.send();
 }
+
+
+// Owl Carousel

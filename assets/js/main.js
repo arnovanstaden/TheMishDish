@@ -1,36 +1,9 @@
-// Owl Carousel
-
-if (window.location.pathname.split("/").pop() === "recipe.html") {
-
-
-  $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-      margin: 10,
-      items: 2,
-      nav: true,
-      responsive: {
-        576: {
-          items: 3
-        },
-        991: {
-          items: 4
-        },
-        1200: {
-          items: 5
-        }
-      }
-    });
-  });
-}
-
 
 // Menu 
 
 function openMenu() {
 
   if ($(".navbar-content").hasClass("navbar-open")) {
-
-
 
     // Toggle Icon Change
     $(".navbar-icon").toggleClass("change");
@@ -49,13 +22,13 @@ function openMenu() {
 
     if ($(window).width() <= 768) {
       // Open Menu
-      $(".navbar-content img").attr("src","./assets/images/icons/navbar-logo.png")
-      $(".navbar-content").css("width", "100%");
+      $(".navbar-content img").attr("src", "./assets/images/icons/navbar-logo.png")
+      $(".navbar-content").css("width", "100vw");
       $(".navbar-content").css("opacity", "1");
     } else {
 
       // Open Menu
-      $(".navbar-content").css("width", "60%");
+      $(".navbar-content").css("width", "60vw");
       $(".navbar-content").css("opacity", "1");
     }
 
@@ -107,7 +80,17 @@ $(document).ready(function () {
       filterCat(`recipe-${pageCat}`);
       $(".home-recipe-categories > p").removeClass("active-recipe-cat");
       $(`#recipe-cat-${pageCat}`).addClass("active-recipe-cat");
-      document.querySelector('#recipe-cats').scrollIntoView({ behavior: 'smooth' });
+      document.querySelector('#recipe-cats').scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   }
 });
+
+// 404 page
+
+if (window.location.pathname == "/404.html") {
+  setTimeout(() => {
+    window.location.pathname = "./index.html"
+  }, 6000);
+}

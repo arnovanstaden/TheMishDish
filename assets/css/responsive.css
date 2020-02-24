@@ -38,7 +38,7 @@
         width: 45vw;
     }
 
-    .home-landing {
+    .home-landing, .section-404 {
         background-image: url("../images/other/home-mobile.jpg");
         background-position: center center;
         background-size: cover;
@@ -48,7 +48,7 @@
         background-color: var(--yellow) !important;
     }
 
-    .home-recipe-grid {
+    .home-recipe-grid, .home-add-on-grid {
         grid-template-columns: repeat(2, 1fr);
         padding: 5% 5%;
         row-gap: 1rem;
@@ -124,7 +124,6 @@
 
     .recipe-ingredients {
         padding: 0;
-        ;
     }
 
     .recipe-hoop {
@@ -135,7 +134,8 @@
     /* navbar */
 
     .navbar-content img {
-        width: 65%;
+        width: 50%;
+        padding-bottom: 1.5rem;
     }
 
     .navbar-links>div {
@@ -154,7 +154,7 @@
         width: 60vw;
     }
 
-    .home-recipe-grid {
+    .home-recipe-grid, .home-add-on-grid {
         grid-template-columns: 1fr;
         padding: 5% 5%;
         row-gap: 1rem;
@@ -191,5 +191,16 @@
 
     .home-recipe-categories p {
         margin: 3% 5%;
+    }
+
+
+    /* 404 Page */
+
+    .section-404 p {
+        font-size: 1rem;
+    }
+
+    .section-404 > div {
+        padding: 0 10%;
     }
 }
