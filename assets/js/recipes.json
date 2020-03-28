@@ -117,6 +117,52 @@
         "AddOnID": "AO2",
         "AddOnName": "Sambals"
     },
+    "M4": {
+        "Name": "Chicken, Mushroom & Spinach Pie",
+        "Description": "A true crowd pleaser! This dish can also be made into a vegetarian dish if you make it exactly the same way and just leave out the chicken! ",
+        "Ingredients": [
+            "10 sheets of phyllo pastry",
+            "2 tablespoons of butter",
+            "500g creamed spinach (frozen creamed spinach works perfectly fine) ",
+            "1 pack button mushrooms",
+            "4 chicken breasts",
+            "1 white onion",
+            "3 cloves garlic",
+            "3 eggs",
+            "Paprika",
+            "Salt & pepper"
+        ],
+        "IngredientList": [
+            "Phyllo Pastry",
+            "Butter",
+            "Spinach",
+            "Mushrooms",
+            "Chicken breasts",
+            "Onion",
+            "Garlic",
+            "Eggs"
+        ],
+        "Method": [
+            "1. Cut your chicken into small pieces",
+            "2. In a frying pan with some olive oil, brown your chicken in paprika spice and salt & pepper. The chicken doesn't need to be cooked through as it will cook to completion in the oven. Set chicken aside. ",
+            "3. Slice your onion into small rings and fry until golden brown. Set aside.",
+            "4. Finely chop your mushroom and garlic and fry together  with salt & pepper until golden brown. Set aside. ",
+            "5. Defrost your spinach if applicable. ",
+            "6. In a large mixing bowl: Add your creamed spinach, three eggs (raw), chicken, onion and mushrooms. Stir thoroughly. ",
+            "7. Line an oven dish with butter and pour above mixutre into oven dish. ",
+            "8. Bake on 180 degrees for 20 minutes. ",
+            "9. Melt your butter and break your phyllo pastry into halves.",
+            "10. Smeer your butter onto the phyllo pastry sheets and scrunch them into little balls and place onto of the spinach mixture in the oven dish until all surfaces are covered. ",
+            "11. Bake for a further 10-15 minutes until the phyllo pastry is golden brown. "
+        ],
+        "Servings": "4",
+        "PrepTime": "15",
+        "CookTime": "30",
+        "ImageCount": "3",
+        "ServingSuggestion": "Best served with a fresh green salad.",
+        "AddOnID": "",
+        "AddOnName": ""
+    },
 
 
 

@@ -1,4 +1,3 @@
-
 // Menu 
 
 function openMenu() {
@@ -69,14 +68,15 @@ function filterCat(recipeCat) {
 
 $(document).ready(function () {
 
-  if (window.location.pathname.split("/").pop() === "index.html") {
+  if (window.location.pathname == "/index.html") {
 
     // Get Category Type
-    pageCat = $(location).attr("href");
+    pageCat = window.location.href
 
     // Filter if not "All"
     if (pageCat.indexOf("?") > 0) {
       pageCat = pageCat.slice(pageCat.indexOf("?") + 1);
+      console.log(pageCat)
       filterCat(`recipe-${pageCat}`);
       $(".home-recipe-categories > p").removeClass("active-recipe-cat");
       $(`#recipe-cat-${pageCat}`).addClass("active-recipe-cat");
