@@ -180,26 +180,25 @@ async function insertRecipeInfo() {
     // Ingredient List
     let ingredientList = recipe.IngredientList;
 
-    if (ingredientList != "") { // {Don't create catalogue for empty ingredientLists}
+    // if (ingredientList != "") { // {Don't create catalogue for empty ingredientLists}
 
-        for (i = 0; i < ingredientList.length; i++) {
+    //     for (i = 0; i < ingredientList.length; i++) {
 
-            let ingredientListImages = ingredientList.slice();
-            ingredientListImages[i] = ingredientListImages[i].toLowerCase();
-            ingredientListImages[i] = ingredientListImages[i].replace(" ", "-");
-            let ingredientImage = `url("./assets/images/ingredients/${ingredientListImages[i]}.jpg")`
+    //         let ingredientListImages = ingredientList.slice();
+    //         ingredientListImages[i] = ingredientListImages[i].toLowerCase();
+    //         ingredientListImages[i] = ingredientListImages[i].replace(" ", "-");
+    //         let ingredientImage = `url("./assets/images/ingredients/${ingredientListImages[i]}.jpg")`
 
-            $(".recipe-ingredients").append(
-                `<div class="ingredient item">\
-                    <div class="ingredient-image" id="ing-${ingredientListImages[i]}"></div>\
-                    <h5 class="ingredient-name"> ${ingredientList[i]} </h5>\
-                </div>`
-            );
+    //         $(".recipe-ingredients").append(
+    //             `<div class="ingredient item">\
+    //                 <div class="ingredient-image" id="ing-${ingredientListImages[i]}"></div>\
+    //                 <h5 class="ingredient-name"> ${ingredientList[i]} </h5>\
+    //             </div>`
+    //         );
 
-            $(`#ing-${ingredientListImages[i]}`).css("background-image", ingredientImage);
-        }
-
-    }
+    //         $(`#ing-${ingredientListImages[i]}`).css("background-image", ingredientImage);
+    //     }
+    // }
 
     //  Insert Ingredients
     let ingredientType = Object.keys(recipe.Ingredients);

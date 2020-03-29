@@ -56,11 +56,12 @@ $(".home-recipe-categories > p").click(function () {
 function filterCat(recipeCat) {
   if (recipeCat == "recipe-cat-all") {
     $(".home-recipe-grid > a").fadeIn(500);
+    console.log("filter-all")
   } else {
     recipeCat = recipeCat.replace("-cat", "");
-    $(".home-recipe-grid > a").hide();
-    console.log(recipeCat)
+    $(".home-recipe").hide();
     $(`.${recipeCat}`).fadeIn(500);
+    console.log("filter " + recipeCat)
   }
 }
 
@@ -74,9 +75,9 @@ $(document).ready(function () {
     pageCat = window.location.href
 
     // Filter if not "All"
-    if (pageCat.indexOf("?") > 0) {
+    if (pageCat.indexOf("?") >= 0) {
       pageCat = pageCat.slice(pageCat.indexOf("?") + 1);
-      console.log(pageCat)
+
       filterCat(`recipe-${pageCat}`);
       $(".home-recipe-categories > p").removeClass("active-recipe-cat");
       $(`#recipe-cat-${pageCat}`).addClass("active-recipe-cat");
@@ -85,6 +86,8 @@ $(document).ready(function () {
       });
     }
   }
+
+
 });
 
 // 404 page
