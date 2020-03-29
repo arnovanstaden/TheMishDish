@@ -163,6 +163,75 @@
         "AddOnID": "",
         "AddOnName": ""
     },
+    "M5": {
+        "Name": "Bok Choy, Quinoa & Fried Chicken Bowl",
+        "Description": "This dish has three different elements - soya bok choy, lemon and leek quinoa and sesame fried chicken.        The elements are all delicious on their own and can be used with different dishes or even as a side dish on its own.          When they are all combined - you get a fresh bowl of zesty Asian flavours!",
+        "Ingredients": {
+            "Bok Choy": [
+                "1 packet baby bok choy",
+                "soya sauce",
+                "1 teaspoon honey",
+                "5 cloves of garlic"
+            ],
+            "Lemon & Leek Quinoa": [
+                "3 large leeks",
+                "1 cup quinoa(can be substituted for rice if you don 't have quinoa)",
+                "1 lemon 2 tablespoons garlic, chilli & ginger mix"
+            ],
+            "Fried Chicken": [
+                "3 chicken breasts",
+                "1 cup flour(I used gluten free cake flour, but you can use any cake flour)",
+                "2 eggs",
+                "1 / 2 cup sesame seeds",
+                "Seasoning of choice"
+            ]
+        },
+        "IngredientList": [
+            "Bok choy",
+            "Soy Sauce",
+            "Honey",
+            "Garlic",
+            "Leeks",
+            "Quinoa",
+            "Lemon",
+            "Chicken Breasts",
+            "Flour",
+            "Eggs",
+            "Seeds"
+        ],
+        "Method": {
+            "Lemon & Leek Quinoa": [
+                "The first step is to make your lemon and leek quinoa as this can be set aside and heated later when serving.",
+                "Cook your quinoa by putting in a pot with double the amount of water and simmering until all water is evaporated.",
+                "Chop your leeks very finely,and fry in olive oil in a frying pan.",
+                "Add your garlic,ginger and chilli mix and fry until leeks start slightly browning.Set aside and wait for your quinoa to cook.",
+                "Once cooked, add your quinoa to your leeks,  squeeze the juice of one lemon into the mix and thoroughly mix through and continue frying for 5 minutes.",
+                "Once finished, set aside in a microwavable dish so it can be heated and served later."
+            ],
+            "Sesame Fried Chicken": [
+                "In one bowl combine two eggs and mix thoroughly.",
+                "In a seperate bowl combine your flour, sesame seeds and seasoning(I would recommend salt, pepper, chilli flakes and dried ginger - but you can adapt to your liking)",
+                "Slice your chicken into small pieces.",
+                "Bring oil to the heat(If possible, use a non - stick pan)",
+                "Dip your chicken pieces one by one first into the eggs and then the flour and sesame mixture and the into the pan.",
+                "Fry about 5 - 6 chicken pieces at a time.Fry for about 4 minutes on each side, until the chicken is nice and golden brown.",
+                "Complete chicken and set aside."
+            ],
+            "Soya Bok Choy": [
+                "Chop your bok choy into smaller pieces.",
+                "Fry with two table spoons of soya sauce, 5 cloves of garlic(Yes, that much) and 1 teaspoon of honey.",
+                "Fry for about 5 minutes or until cooked.",
+                "Finally, heat up your quinoa, and serve all your elements together!"
+            ]
+        },
+        "Servings": "3",
+        "PrepTime": "30",
+        "CookTime": "30",
+        "ImageCount": "5",
+        "ServingSuggestion": "Best enjoyed with a couple of roasted almond shavings! ",
+        "AddOnID": "",
+        "AddOnName": ""
+    },
 
 
 
@@ -285,7 +354,6 @@
                 "After about 5 minutes add your asparagus & mushroom.",
                 "Season with paprika & salt and pepper while frying.",
                 "Fry for about 5 - 10 minutes until the vegetables are browned.",
-
                 "In a serving bowl, add your sauce and asparagus mixture to your pasta of choice and viola!"
             ]
         },
