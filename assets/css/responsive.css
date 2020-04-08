@@ -38,7 +38,8 @@
         width: 45vw;
     }
 
-    .home-landing, .section-404 {
+    .home-landing,
+    .section-404 {
         background-image: url("../images/other/home-mobile.jpg");
         background-position: center center;
         background-size: cover;
@@ -48,7 +49,8 @@
         background-color: var(--yellow) !important;
     }
 
-    .home-recipe-grid, .home-add-on-grid {
+    .home-recipe-grid,
+    .home-add-on-grid {
         grid-template-columns: repeat(2, 1fr);
         padding: 5% 5%;
         row-gap: 1rem;
@@ -87,7 +89,7 @@
     }
 
     .recipe-info {
-        padding: 0 5% 7.5% 5%;
+        padding: 10% 5% 7.5% 5%;
         display: block;
         /* width: 100vw; */
         flex-direction: unset;
@@ -154,7 +156,8 @@
         width: 60vw;
     }
 
-    .home-recipe-grid, .home-add-on-grid {
+    .home-recipe-grid,
+    .home-add-on-grid {
         grid-template-columns: 1fr;
         padding: 5% 5%;
         row-gap: 1rem;
@@ -200,7 +203,7 @@
         font-size: 1rem;
     }
 
-    .section-404 > div {
+    .section-404>div {
         padding: 0 10%;
     }
 }
