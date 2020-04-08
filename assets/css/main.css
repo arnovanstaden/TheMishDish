@@ -363,7 +363,6 @@ body {
     background-size: cover;
     position: relative;
     transition: background-image 1s;
-    border-radius: 0 50% 50% 0;
 }
 
 .recipe-hoop {
@@ -547,7 +546,7 @@ body {
 
 }
 
-.ingredient-arrows > i {
+.ingredient-arrows>i {
     margin: 0 1rem;
     font-size: 1.8rem;
     color: var(--yellow);
@@ -565,7 +564,7 @@ body {
     cursor: pointer;
 }
 
-.ingredient-arrows > i:hover {
+.ingredient-arrows>i:hover {
     color: white;
     background-color: var(--yellow);
 }
