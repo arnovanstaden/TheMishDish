@@ -232,6 +232,59 @@
         "AddOnID": "",
         "AddOnName": ""
     },
+    "M6": {
+        "Name": "Curried Mince Pasta Bake",
+        "Description": "This is dish makes for a hearty, warm and substantial bowl of goodness. ",
+        "Ingredients": [
+            "1 large white onion",
+            "3 tablespoons of curry powder",
+            "2 tablespoons of chopped garlic ",
+            "Handful of fresh herbs (I used a mix of sage, basil and oregano) ",
+            "3 large carrots",
+            "500g lean beef mince",
+            "1 cup macaroni pasta",
+            "1 tub vegetable stock",
+            "1 tin diced tomatoes",
+            "100g tomatoe paste",
+            "1/2 cup of cheese of choice"
+        ],
+        "IngredientList": [
+            "Bok choy",
+            "Soy Sauce",
+            "Honey",
+            "Garlic",
+            "Leeks",
+            "Quinoa",
+            "Lemon",
+            "Chicken Breasts",
+            "Flour",
+            "Eggs",
+            "Seeds"
+        ],
+        "Method": [
+            " Finely chop your onion and add to a large frying pan/pot (non-stick) with some oil, start to fry until onions become soft and translucent",
+            "Add your curry powder and garlic to your onions and continue frying",
+            "Finely chop your herbs. Add about two thirds of your herbs to the onion mixture, and leave the rest aside",
+            "Grate 2 of your carrots and add to your onion mixture. Continue frying",
+            "Chop your remaining carrot finely and add to your onion mixture. Continue frying",
+            "Add your beef mince and add enough salt to taste. Fry until all the mince is browned. ",
+            "Add your vegetable stock, 1/2 cup of water, diced tomatoes and tomatoe paste and stir thoroughly. Taste your mixture and add more salt if needed. ",
+            "Leave your beef mixture to simmer on a low heat while you cook your macaroni pasta. I always add a teaspoon of butter to the pot when cooking pasta to help prevent the water from boiling over. ",
+            "Once your pasta is cooked, drain and add to beef mixture. ",
+            " Stir thoroughly and transfer to baking dish and straight into the oven at 180 degrees. ",
+            " While your curried beef pasta is baking, grate your cheese. ",
+            " After ten minutes of baking, remove the mixture from the oven and top with your grated cheese and remaining fresh herbs. ",
+            " Continue baking for another 15 minutes.",
+            " Serve and enjoy!"
+        ],
+        "Servings": "4",
+        "PrepTime": "20",
+        "CookTime": "35",
+        "ImageCount": "3",
+        "ServingSuggestion": "",
+        "AddOnID": "",
+        "AddOnName": ""
+    },
 
 
 
