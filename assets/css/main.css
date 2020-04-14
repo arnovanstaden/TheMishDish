@@ -19,7 +19,7 @@ body {
 /* Set Variables */
 
 :root {
-    --serif: "Cormorant";
+    --serif: "Old Standard TT";
     --sans-serif: "Montserrat";
     --dark-blue: #213242;
     --light-blue: #EDF1FE;
@@ -172,17 +172,18 @@ body {
 
 .home-recipe-section,
 .home-add-on-section {
-    padding: 2% 0;
+    padding: 3rem 0;
 }
 
 .home-recipe-section h1,
 .home-add-on-section h1 {
     color: var(--dark-blue);
     font-family: var(--serif);
-    font-size: 3rem;
+    font-size: 2.6rem;
     text-align: center;
     margin: 0;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .home-recipe-section>.divider-line,
@@ -195,17 +196,16 @@ body {
 
 .home-recipe-grid,
 .home-add-on-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3% 7.5% 5% 7.5%;
-    column-gap: 5%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
 }
 
 .home-recipe {
     text-align: center;
     cursor: pointer;
     transition: ease 0.5s;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .home-recipe-categories {
@@ -216,13 +216,17 @@ body {
 
 .home-recipe-categories p {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: 2px solid var(--dark-blue);
     border-radius: 2rem;
-    padding: 0.3rem 1rem;
+    padding: 3px 15px;
     background-color: var(--dark-blue);
     transition: ease 0.5s;
     color: white;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
 }
 
 .home-recipe-categories p:hover {
@@ -237,15 +241,13 @@ body {
     color: var(--dark-blue) !important;
 }
 
-.home-recipe-image {
-    background-size: cover;
-    background-position: center center;
-    width: 22.5vh;
-    height: 22.5vh;
-    border-radius: 20%;
-    box-shadow: 5px 5px 15px 5px #e0e0e0;
-    margin: auto;
-    transition: ease 0.5s;
+.home-recipe-image img {
+    height: 30vh;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
 }
 
 
@@ -253,7 +255,7 @@ body {
     color: var(--dark-blue);
     font-size: 1.1rem;
     font-weight: 500;
-    transition: ease 0.5s;
+    padding-top: 10px;
 }
 
 .home-recipe:hover {
@@ -262,10 +264,7 @@ body {
 
 .home-recipe:hover h5 {
     color: var(--yellow);
-}
-
-.home-recipe:hover .home-recipe-image {
-    box-shadow: 5px 5px 15px 5px #c9c9c9;
+    text-decoration: none !important;
 }
 
 
@@ -283,7 +282,7 @@ body {
 .about-text h1 {
     color: var(--light-blue);
     font-family: var(--serif);
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 0;
     letter-spacing: 1px;
 }

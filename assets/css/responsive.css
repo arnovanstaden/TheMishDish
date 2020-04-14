@@ -1,7 +1,7 @@
 /* Set Variables */
 
 :root {
-    --serif: "Cormorant";
+    --serif: "Old Standard TT";
     --sans-serif: "Montserrat";
     --dark-blue: #213242;
     --light-blue: #EDF1FE;
@@ -10,17 +10,6 @@
 
 @media screen and (max-width: 1200px) {
     /* home Page */
-
-    .home-recipe-grid {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 5% 5%;
-        column-gap: 5%;
-    }
-
-    .home-recipe-image {
-        width: 20vh;
-        height: 20vh;
-    }
 
     .home-landing img {
         width: 37.5vw;
@@ -154,18 +143,6 @@
 
     .home-landing img {
         width: 60vw;
-    }
-
-    .home-recipe-grid,
-    .home-add-on-grid {
-        grid-template-columns: 1fr;
-        padding: 5% 5%;
-        row-gap: 1rem;
-    }
-
-    .home-recipe-image {
-        width: 25vh;
-        height: 25vh;
     }
 
     .recipe-stats {

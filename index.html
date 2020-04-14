@@ -21,7 +21,10 @@
     <link rel="icon" type="image/png" href="./assets/images/icons/favicon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cormorant:400,500|Montserrat:300,300i,400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400&display=swap" rel="stylesheet">
+
+
 
     <!-- Theme Colour -->
     <meta name="theme-color" content="#000000">
@@ -29,6 +32,8 @@
 
     <!-- Vendors -->
     <link href="./vendors/font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Internal -->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
@@ -46,13 +51,13 @@
     <section class="home-recipe-section">
         <h1>All Recipes</h1>
         <div class="divider-line"></div>
-        <div class="home-recipe-categories" id="recipe-cats">
+        <div class="home-recipe-categories container" id="recipe-cats">
             <p class="active-recipe-cat" id="recipe-cat-all">All</p>
             <p id="recipe-cat-meat">Meat</p>
             <p id="recipe-cat-vegetarian">Vegetarian</p>
             <p id="recipe-cat-vegan">Vegan</p>
         </div>
-        <div class="home-recipe-grid">
+        <div class="home-recipe-grid container-fluid">
 
             <!-- JSON Inserted Here -->
 
@@ -92,7 +97,11 @@
 
 
     <!-- Scripts -->
-    <script src="vendors/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/recipes.js"></script>
 
