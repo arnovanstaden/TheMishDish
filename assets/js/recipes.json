@@ -492,6 +492,43 @@
         "ServingSuggestion": "",
         "AddOnID": ""
     },
+    "VT5": {
+        "Name": "Tomato Soup (Blender-Free)",
+        "Description": "This soup is hearty but light at the same time. Best served with a slice of ciabatta toast, or if you're feeling like some proper comfort food - a toasted cheese sandwich! Suitable for lunch or dinner. ",
+        "Ingredients": [
+            "1 white onion (finely chopped)",
+            "1 tablespoon butter",
+            "2 cloves garlic (finely chopped)",
+            "6 tomatoes (peeled)",
+            "4 sprigs fresh thyme (chopped)",
+            "4 sprigs fresh rosemary (chopped)",
+            "1 teaspoon paprika",
+            "1 teaspoon worcester sauce",
+            "50 ml milk",
+            "1 tablespoon flour",
+            "1/4 cup veggie stock",
+            "1/2 can tomatoe purree",
+            "salt & pepper"
+        ],
+        "Method": [
+            "1. Preheat oven to 180 degrees; slice your peeled tomatoes into quarters and place into an oven dish",
+            "2. Add your garlic, thyme, rosemary, paprika and worcester sauce to your tomatoes, drizzle with olive oil and put into the oven to roast for 30 minutes",
+            "3. Add your onions to a large pot along with your butter and a drizzle of olive oil, cook on a low heat until onions are soft",
+            "4. Whille the onions are cooking, in a mixing bowl, thoroughly combine your milk and flour",
+            "5. Once tomatoes have been in for 30 minutes, take out of the oven and use a fork or masher to mash up the tomato mixture.",
+            "6. Add tomatoe mixture to the mixing bowl of milk & flour, and whisk thoroughly",
+            "7. Add contents of the mixing bowl to your pot of onions along with your veggie stock and tomatoe puree and mix until all ingredients are combined",
+            "8. Add salt and pepper to taste and allow to simmer for 15 minutes",
+            "9. Serve and enjoy!"
+
+        ],
+        "Servings": "3-4",
+        "PrepTime": "20",
+        "CookTime": "45",
+        "ImageCount": "1",
+        "ServingSuggestion": "Best served with a dollop of Creme Fraiche! ",
+        "AddOnID": ""
+    },
 
 
 
