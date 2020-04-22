@@ -30,14 +30,14 @@
 // })
 
 
-
+const api_url = "http://localhost:3000"
 
 // HOME PAGE
 
 // Normal Recipes
 
 const insertHomeRecipes = () => {
-    axios.get("http://localhost:3000/recipes")
+    axios.get(`${api_url}/recipes`)
         .then(response => {
             const recipes = response.data;
 
@@ -93,7 +93,7 @@ const insertRecipeInfo = () => {
     recipeCode = recipeCode.substr(1); //Remove #
 
     // Fetch Recipe Data
-    axios.get(`http://localhost:3000/recipes/recipeCode/${recipeCode}`)
+    axios.get(`${api_url}/recipes/recipeCode/${recipeCode}`)
         .then(response => {
             const recipe = response.data;
             // Insert HTML
