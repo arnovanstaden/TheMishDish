@@ -1,3 +1,5 @@
+const api_url = "https://the-mish-dish-backend.herokuapp.com";
+
 // // OWL CAROUSEL
 // function loadCarousel() {
 //     $(".owl-carousel").owlCarousel({
@@ -30,59 +32,52 @@
 // })
 
 
-const api_url = "http://localhost:3000"
+
 
 // HOME PAGE
 
 // Normal Recipes
-
-const insertHomeRecipes = () => {
+const loadHomeRecipes = () => {
+    showLoader()
     axios.get(`${api_url}/recipes`)
         .then(response => {
             const recipes = response.data;
-
-            // Insert HTML
             recipes.forEach(recipe => {
                 if (recipe.recipeType == "add-on") {
-                    // Insert HTML
-                    $(".home-add-on-grid").append(
-                        `<a class="home-recipe" id="${recipeNo}"  href="./recipe.html#${recipeNo}">\
-                            <div class="home-recipe-image"  >\
-                                <div class="home-recipe-image-cover"></div>\
-                            </div>\
-                            <h5>${recipeName}</h5>\
-                        </a>`
-                    );
+                    $(".home-add-on-grid .row").append(
+                        `
+                        <a class="home-recipe col-md-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
+                            <img src=${recipe.recipeThumbnailUrl}>                  
+                            <h5>${recipe.name}</h5>                
+                        </a>
+                        `
+                    )
                 } else {
-                    $(".home-recipe-grid").append(
-                        `<a class="home-recipe recipe-${recipe.recipeType} col-md-3" id="${recipe.recipeCode}" href="./recipe.html#${recipe.recipeCode}">\
-                            <div class="home-recipe-image">\
-                               <img src="${recipe.recipeThumbnailUrl}" alt="${recipe.name} Thumbnail">
-                            </div>\
-                            <h5>${recipe.name}</h5>\
-                        </a>`
-                    );
+                    $(".home-recipe-grid .row").append(
+                        `
+                        <a class="home-recipe recipe-${recipe.recipeType} col-md-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
+                            <img src=${recipe.recipeThumbnailUrl}>                  
+                            <h5>${recipe.name}</h5>                
+                        </a>
+                        `
+                    )
                 }
-                // Insert HTML
-            })
+            });
+            hideLoader()
         })
-        .catch(error => {
-            console.log(error)
-        });
-}
+        .catch(err => console.log(err))
 
-if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
-    insertHomeRecipes();
 }
-
 
 
 // ------------------------------
 
 // RECIPE PAGE
 
-const insertRecipeInfo = () => {
 
+
+const loadRecipe = () => {
+    showLoader();
     let recipeCode = window.location.hash; //Get Recipe ID
 
     // Return to home page if no hash
@@ -91,87 +86,100 @@ const insertRecipeInfo = () => {
     }
 
     recipeCode = recipeCode.substr(1); //Remove #
-
-    // Fetch Recipe Data
     axios.get(`${api_url}/recipes/recipeCode/${recipeCode}`)
         .then(response => {
             const recipe = response.data;
+            console.log(recipe)
             // Insert HTML
             document.title = recipe.name;
 
             // Set Landing Image
-            $(".recipe-image").css("background-image", `url('${recipe.recipeImageUrls[0]}'`);
+            $(".recipe-image").css("background-image", `url("${recipe.recipeImageUrls[0]}")`);
 
             $(".recipe-name").html(recipe.name);
             $(".recipe-description").html(recipe.description);
             $(".recipe-serving").html(recipe.servings);
             $(".recipe-prep").html(recipe.prepTime);
             $(".recipe-cook").html(recipe.cookTime);
-            $(".recipe-ing-count").html(recipe.ingredients.length);
+
+            const ingredientComponents = Object.keys(recipe.ingredients);
 
             //  Insert Ingredients
-            let ingredientType = Object.keys(recipe.ingredients);
-            if (ingredientType[0] != 0) { // {Check if multiple methods (objects)}
-                let ingredientKeys = Object.keys(recipe.ingredients);
-                for (i = 0; i < ingredientKeys.length; i++) { // {run for every method}
-
-                    let currentKey = ingredientKeys[i];
+            if (ingredientComponents.length > 1) { //> 1 Ingredient Component
+                let ingCount = 0;
+                for (i = 0; i < ingredientComponents.length; i++) {
+                    let key = ingredientComponents[i];
                     $(".ingredients-list").append(
-                        `<h2 class='ingredient-sub-heading'> ${currentKey}: </h2>`
-                    )
-                    for (j = 0; j < recipe.ingredients[currentKey].length; j++) { // {run for every step in method}
-                        $(".ingredients-list").append(
-                            `<div> \
-                    <img src="./assets/images/icons/list-bullet.png"> \
-                    <p>${recipe.ingredients[currentKey][j]}</p> \
-                    </div>`
-                        );
-
-                    }
-                }
-
-            } else {
-                for (i = 0; i < recipe.ingredients.length; i++) {
-                    $(".ingredients-list").append(
-                        `<div> \
-                  <img src="./assets/images/icons/list-bullet.png"> \
-                  <p> ${recipe.ingredients[i]}</p> \
-                  </div>`
+                        `
+                        <h2 class="ingredient-sub-heading"> ${key} </h2>
+                        `
                     );
+                    recipe.ingredients[key].forEach(ingredient => {
+                        $(".ingredients-list").append(
+                            `
+                            <div> 
+                                <img src="./assets/images/icons/list-bullet.png">
+                                <p> ${ingredient} </p>
+                            </div>
+                            `
+                        )
+                        ingCount++;
+                    });
+                    $(".recipe-ing-count").html(ingCount);
+
                 }
+            } else {
+                recipe.ingredients["0"].forEach(ingredient => {
+                    $(".recipe-ing-count").html(ingredientComponents.length);
+                    $(".ingredients-list").append(
+                        `
+                        <div> 
+                            <img src="./assets/images/icons/list-bullet.png">
+                            <p> ${ingredient} </p>
+                        </div>
+                        `
+                    )
+                });
             }
-
-
-
 
             //  Insert Method Steps
-            let methodType = Object.keys(recipe.method);
-            if (methodType[0] != 0) { // {Check if multiple methods (objects)}
-                let methodKeys = Object.keys(recipe.method);
-                for (i = 0; i < methodKeys.length; i++) { // {run for every method}
 
-                    let currentKey = methodKeys[i];
+            const methodComponents = Object.keys(recipe.method);
+
+            //  Insert method
+            if (methodComponents.length > 1) { //> 1 Method Component
+                for (i = 0; i < methodComponents.length; i++) {
+                    let stepCount = 1;
+                    let key = methodComponents[i];
                     $(".recipe-method-steps-list").append(
-                        `<h2 class='method-sub-heading'> ${currentKey}: </h2>`
-                    )
-                    for (j = 0; j < recipe.method[currentKey].length; j++) { // {run for every step in method}
-                        $(".recipe-method-steps-list").append(
-                            `<p><span>${j+1}.</span>${recipe.method[currentKey][j]}</p>`
-                        );
-
-                    }
-                }
-
-            } else {
-                for (j = 0; j < recipe.method.length; j++) {
-                    $(".recipe-method-steps-list").append(
-                        `<p><span>${j+1}.</span>${recipe.method[j]}</p>`
+                        `
+                        <h2 class="method-sub-heading"> ${key} </h2>
+                        `
                     );
-
+                    recipe.method[key].forEach(Method => {
+                        $(".recipe-method-steps-list").append(
+                            `
+                            <div> 
+                                <p><span>${stepCount}</span> ${Method} </p>
+                            </div>
+                            `
+                        )
+                        stepCount++;
+                    });
                 }
+            } else {
+                let stepCount = 1;
+                recipe.method["0"].forEach(Method => {
+                    $(".recipe-method-steps-list").append(
+                        `
+                        <div> 
+                            <p><span>${stepCount}</span> ${Method} </p>
+                        </div>
+                        `
+                    );
+                    stepCount++;
+                });
             }
-
-
 
             // Serving Suggestions
             if (recipe.servingSuggestion == "") {
@@ -182,11 +190,12 @@ const insertRecipeInfo = () => {
 
             //  Recipe Images
             let imageCount = recipe.recipeImageUrls.length;
-            let imageClickCount = 1;
 
             if (imageCount < 2) {
                 $(".recipe-arrows").css("display", "none")
             }
+
+            let imageClickCount = 1;
 
             $(".image-order").html(`${imageClickCount} / ${imageCount}`)
 
@@ -195,27 +204,36 @@ const insertRecipeInfo = () => {
                 if (imageClickCount > imageCount) {
                     imageClickCount = 1;
                 }
-                let recipeImage = `url(${recipe.recipeImageUrls[imageClickCount-1]})`;
+                let recipeImage = `url("${recipe.recipeImageUrls[imageClickCount -1]}")`;
+                $(".recipe-image").css("background-image", recipeImage);
+                $(".image-order").html(`${imageClickCount} / ${imageCount}`)
+            });
+
+            $(".prev-image").click(() => {
+                imageClickCount--;
+                if (imageClickCount < imageCount) {
+                    imageClickCount = 1;
+                }
+                let recipeImage = `url("${recipe.recipeImageUrls[imageClickCount -1]}")`;
                 $(".recipe-image").css("background-image", recipeImage);
                 $(".image-order").html(`${imageClickCount} / ${imageCount}`)
             });
 
 
             // Add-On Recipes
-            if (recipe.addOnCode !== undefined) { // {Check if add-on recipe exists}
+            if (recipe.hasOwnProperty("addOnCode") && recipe.addOnCode != "") { // {Check if add-on recipe exists}
 
                 $(".ingredients-list").append(
-                    `<h2 class='ingredient-sub-heading'> ${recipe.addOnName}: </h2> \
-                    <a href='./recipe.html#${recipe.addOnID}' target="blank">Click here for the recipe</a>`
+                    `<h2 class='ingredient-sub-heading'>${recipe.addOnName} </h2> \
+                    <a href='./recipe.html#${recipe.addOnCode}' target="blank">Click here for the recipe</a>`
                 );
             }
+
+            hideLoader();
         })
+        .catch(err => console.log(err))
+
+    // ---------------
 
 
-
-}
-
-//  Run on Recipe Page
-if (window.location.pathname == "/recipe.html") {
-    insertRecipeInfo();
 }

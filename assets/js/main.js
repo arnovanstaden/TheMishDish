@@ -97,3 +97,14 @@ if (window.location.pathname == "/404.html") {
     window.location.pathname = "./index.html"
   }, 6000);
 }
+
+// Loader
+const showLoader = () => {
+  $(".loader").show();
+  $("html").css("overflow-y", "hidden");
+}
+
+const hideLoader = () => {
+  $("html").css("overflow-y", "scroll")
+  $(".loader").fadeOut(500);
+}

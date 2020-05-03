@@ -41,7 +41,7 @@
 
 </head>
 
-<body>
+<body onload="loadHomeRecipes()">
 
     <section class="home-landing">
         <img src="./assets/images/icons/home-logo.png" alt="">
@@ -57,9 +57,11 @@
             <p id="recipe-cat-vegetarian">Vegetarian</p>
             <p id="recipe-cat-vegan">Vegan</p>
         </div>
-        <div class="home-recipe-grid container-fluid">
+        <div class="home-recipe-grid container">
 
-            <!-- JSON Inserted Here -->
+            <div class="row">
+                <!-- JSON Inserted Here -->
+            </div>
 
         </div>
     </section>
@@ -67,10 +69,10 @@
     <section class="home-add-on-section">
         <h1>Add-On Recipes</h1>
         <div class="divider-line"></div>
-        <div class="home-add-on-grid">
-
-            <!-- JSON Inserted Here -->
-
+        <div class="home-add-on-grid container">
+            <div class="row">
+                <!-- JSON Inserted Here -->
+            </div>
         </div>
     </section>
 
@@ -93,6 +95,13 @@
     <footer>
         <p>Design & Development by <a href="http://www.webdacity.co.za/">Webdacity</a> </p>
     </footer>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div>
+            <img src="./assets/images/icons/loader.png" alt="The Mish Dish Logo">
+        </div>
+    </div>
 
 
 

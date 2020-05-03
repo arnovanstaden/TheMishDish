@@ -148,6 +148,56 @@ body {
 }
 
 
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(33, 50, 66, 1);
+    z-index: 2000;
+    display: none;
+}
+
+.loader>div {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.loader img {
+    width: 5vw;
+    animation: loader-spin 1s infinite;
+    -webkit-animation: loader-spin 1s infinite;
+}
+
+
+@keyframes loader-spin {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+
 /* 2. HOME PAGE */
 
 /* Home Landing Section */
@@ -194,11 +244,8 @@ body {
     margin: 1rem auto;
 }
 
-.home-recipe-grid,
-.home-add-on-grid {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem 0;
+.home-recipe-grid {
+    padding-top: 2rem;
 }
 
 .home-recipe {
@@ -206,6 +253,17 @@ body {
     cursor: pointer;
     transition: ease 0.5s;
     text-decoration: none !important;
+    margin-bottom: 2.5rem;
+}
+
+.home-recipe img {
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .home-recipe-categories {
