@@ -54,14 +54,13 @@ $(".home-recipe-categories > p").click(function () {
 });
 
 function filterCat(recipeCat) {
-  if (recipeCat == "recipe-cat-all") {
-    $(".home-recipe-grid > a").fadeIn(500);
-    console.log("filter-all")
+  const category = recipeCat.slice(recipeCat.lastIndexOf("-") + 1, recipeCat.length);
+  console.log("filter: " + category)
+  if (category === "all") {
+    $(".home-recipe-grid .home-recipe").fadeIn(500);
   } else {
-    recipeCat = recipeCat.replace("-cat", "");
     $(".home-recipe").hide();
-    $(`.${recipeCat}`).fadeIn(500);
-    console.log("filter " + recipeCat)
+    $(`.home-recipe[data-recipe-type="${category}"`).fadeIn(500);
   }
 }
 
@@ -99,12 +98,9 @@ if (window.location.pathname == "/404.html") {
 }
 
 // Loader
-const showLoader = () => {
-  $(".loader").show();
-  $("html").css("overflow-y", "hidden");
-}
 
 const hideLoader = () => {
   $("html").css("overflow-y", "scroll")
   $(".loader").fadeOut(500);
+  $(".page-body").fadeIn(500);
 }

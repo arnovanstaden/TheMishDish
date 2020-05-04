@@ -1,44 +1,9 @@
 const api_url = "https://the-mish-dish-backend.herokuapp.com";
 
-// // OWL CAROUSEL
-// function loadCarousel() {
-//     $(".owl-carousel").owlCarousel({
-//         margin: 10,
-//         responsiveClass: true,
-//         items: 2,
-//         nav: true,
-//         responsive: {
-//             576: {
-//                 items: 3
-//             },
-//             991: {
-//                 items: 4
-//             },
-//             1200: {
-//                 items: 5
-//             }
-//         }
-//     });
-// }
-
-// $('.owl-next').click(function () {
-//     $(".owl-carousel").trigger('next.owl.carousel');
-// })
-// // Go to the previous item
-// $('.owl-prev').click(function () {
-//     // With optional speed parameter
-//     // Parameters has to be in square bracket '[]'
-//     $(".owl-carousel").trigger('prev.owl.carousel', [300]);
-// })
-
-
-
-
 // HOME PAGE
 
 // Normal Recipes
 const loadHomeRecipes = () => {
-    showLoader()
     axios.get(`${api_url}/recipes`)
         .then(response => {
             const recipes = response.data;
@@ -46,7 +11,7 @@ const loadHomeRecipes = () => {
                 if (recipe.recipeType == "add-on") {
                     $(".home-add-on-grid .row").append(
                         `
-                        <a class="home-recipe col-md-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
+                        <a class="home-recipe-add-on col-md-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
                             <img src=${recipe.recipeThumbnailUrl}>                  
                             <h5>${recipe.name}</h5>                
                         </a>
@@ -55,7 +20,7 @@ const loadHomeRecipes = () => {
                 } else {
                     $(".home-recipe-grid .row").append(
                         `
-                        <a class="home-recipe recipe-${recipe.recipeType} col-md-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
+                        <a class="home-recipe col-md-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}" href="./recipe.html#${recipe.recipeCode}" data-recipe-type="${recipe.recipeType}">
                             <img src=${recipe.recipeThumbnailUrl}>                  
                             <h5>${recipe.name}</h5>                
                         </a>
@@ -77,7 +42,6 @@ const loadHomeRecipes = () => {
 
 
 const loadRecipe = () => {
-    showLoader();
     let recipeCode = window.location.hash; //Get Recipe ID
 
     // Return to home page if no hash

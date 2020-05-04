@@ -150,6 +150,11 @@ body {
 
 
 /* Loader */
+
+.page-body {
+    display: none;
+}
+
 .loader {
     position: fixed;
     top: 0;
@@ -158,7 +163,6 @@ body {
     height: 100vh;
     background-color: rgba(33, 50, 66, 1);
     z-index: 2000;
-    display: none;
 }
 
 .loader>div {
@@ -248,7 +252,8 @@ body {
     padding-top: 2rem;
 }
 
-.home-recipe {
+.home-recipe,
+.home-recipe-add-on {
     text-align: center;
     cursor: pointer;
     transition: ease 0.5s;
@@ -256,7 +261,8 @@ body {
     margin-bottom: 2.5rem;
 }
 
-.home-recipe img {
+.home-recipe img,
+.home-recipe-add-on img {
     width: 65%;
     margin: 0 auto;
     border-radius: 5px;
@@ -309,18 +315,21 @@ body {
 }
 
 
-.home-recipe h5 {
+.home-recipe h5,
+.home-recipe-add-on h5 {
     color: var(--dark-blue);
     font-size: 1.1rem;
     font-weight: 500;
     padding-top: 10px;
 }
 
-.home-recipe:hover {
+.home-recipe:hover,
+.home-recipe-add-on:hover {
     transform: scale(1.025);
 }
 
-.home-recipe:hover h5 {
+.home-recipe:hover h5,
+.home-recipe-add-on:hover h5 {
     color: var(--yellow);
     text-decoration: none !important;
 }
