@@ -89,7 +89,7 @@ body {
 
 .navbar-content img {
     width: 25rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 .navbar-links>div {
@@ -101,11 +101,11 @@ body {
 }
 
 .navbar-links>div>a {
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
     text-decoration: none;
     color: var(--dark-blue);
     font-weight: 500;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     transition: ease 0.5s;
 }
 
@@ -120,7 +120,7 @@ body {
 }
 
 .navbar-links i {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--yellow);
     margin-right: 1.5rem;
 }
@@ -320,7 +320,7 @@ body {
     color: var(--dark-blue);
     font-size: 1.1rem;
     font-weight: 500;
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 
 .home-recipe:hover,

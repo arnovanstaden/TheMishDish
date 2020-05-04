@@ -11,7 +11,7 @@ const loadHomeRecipes = () => {
                 if (recipe.recipeType == "add-on") {
                     $(".home-add-on-grid .row").append(
                         `
-                        <a class="home-recipe-add-on col-md-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
+                        <a class="home-recipe-add-on col-sm-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
                             <img src=${recipe.recipeThumbnailUrl}>                  
                             <h5>${recipe.name}</h5>                
                         </a>
@@ -20,7 +20,7 @@ const loadHomeRecipes = () => {
                 } else {
                     $(".home-recipe-grid .row").append(
                         `
-                        <a class="home-recipe col-md-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}" href="./recipe.html#${recipe.recipeCode}" data-recipe-type="${recipe.recipeType}">
+                        <a class="home-recipe col-sm-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}" href="./recipe.html#${recipe.recipeCode}" data-recipe-type="${recipe.recipeType}">
                             <img src=${recipe.recipeThumbnailUrl}>                  
                             <h5>${recipe.name}</h5>                
                         </a>
