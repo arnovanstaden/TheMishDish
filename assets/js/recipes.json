@@ -325,6 +325,41 @@
         "AddOnID": "",
         "AddOnName": ""
     },
+    "M8": {
+        "Name": "Spaghetti Bolognese",
+        "Description": "Spag bol is a  dish that most people probably know how to cook and has their own favourite version so I thought I would share mine :) ",
+        "Ingredients": [
+            "handful fresh thyme (finely chopped)",
+            "handful fresh basil (finely chopped)",
+            "3 garlic cloves (crushed)",
+            "1 fresh chilli (finely chopped)",
+            "1 white onion (finelly chopped)",
+            "5 celery sticks (finely chopped)",
+            "2 large carrots (finely chopped)",
+            "5 tomatoes (finely chopped)",
+            "400g lean beef mince",
+            "200ml beef stock",
+            "1 tin tomatoe puree"
+
+        ],
+        "IngredientList": [
+
+        ],
+        "Method": [
+            "Add your fresh herbs, garlic and fresh chilli into a casserole with olive oil and cook on medium-high meat for about 5 minutes",
+            "Add your beef mince and cook until browned(add salt to taste)",
+            "Add your onion, celery and carrots and cook on medium - high for 15 - 20 minutes ",
+            "Add your tomatoe puree and beef stock and allow to simmer on low heat for 30 minutes ",
+            "Serve on a bed of spaghetti noodles and sprinkle with cheese of your choice "
+        ],
+        "Servings": "4",
+        "PrepTime": "20",
+        "CookTime": "60",
+        "ImageCount": "1",
+        "ServingSuggestion": "Best enjoyed with a sprinkle of your favourite cheese! ",
+        "AddOnID": "",
+        "AddOnName": ""
+    },
 
 
 
