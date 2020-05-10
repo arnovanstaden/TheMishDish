@@ -691,5 +691,50 @@
         "ImageCount": "1",
         "ServingSuggestion": "",
         "AddOnID": ""
+    },
+    "V5": {
+        "Name": "Crispy Sweet Potatoe Salad with Creamy Cashew Dressing",
+        "Description": "This dish can take quite long to prepare, but the great thing is you can keep all the different elements separate and use in other dishes or even on their own!",
+        "Ingredients": [
+            "1 large sweet potatoe",
+            "2 tablespoons flour ",
+            "tablespoon olive oil",
+            "teaspoon chilli flakes",
+            "1 can chickpeas",
+            "1 teaspoon paprika",
+            "handful baby spinach (finely chopped)",
+            "2 small radishes (finely sliced)",
+            "1/2 apple (finely sliced)",
+            "3 baby tomatoes (finely sliced)",
+            "handful raw cashew nuts",
+            "juice from 1/2 lemon ",
+            "1.5 tablespoons vegan mayo",
+            "1 garlic clove",
+            "tablespoon chopped coriander",
+            "tablespoon oliver oil"
+        ],
+        "IngredientList": [
+            "Carrots",
+            "Onion",
+            "Garlic",
+            "Tomato Paste",
+            "Lentils",
+            "White Wine"
+        ],
+        "Method": {
+            "Sweet Potato": ["Slice sweet potatoe into thin slices and soak in cold water for an hour, then pat dry with a towel and place in a mixing bowl.",
+                " Mix sweet potatoe with chilli flakes, flour and olive oil.",
+                "Place on a baking tray and bake for 30 minutes on 200 degrees, turning over halfway through."
+            ],
+            "Chickpeas": ["Drain can of chickpeas and place on a baking tray. Sprinkle with paprika and olive oil and bake for 30 minutes in the oven along with the sweet potato"],
+            "Dressing": ["In a blender - combine cashew nuts, lemon, garlic, coriander, olive oil , mayo, 50mls of water and a pinch of salt.", "Blend until well-combined."],
+            "Fresh Salad": ["Combine baby spinach, radishes, apple and tomatoes in a salad bowl.", "Add sweet potato, chickpeas & dressing to the salad and viola! "]
+        },
+        "Servings": "2",
+        "PrepTime": "20",
+        "CookTime": "30",
+        "ImageCount": "5",
+        "ServingSuggestion": "",
+        "AddOnID": ""
     }
 }
