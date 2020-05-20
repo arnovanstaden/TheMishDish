@@ -360,6 +360,42 @@
         "AddOnID": "",
         "AddOnName": ""
     },
+    "M9": {
+        "Name": "Crumbed Chicken & Zesty Slaw Wrap",
+        "Description": "This dish is a complete cheat dish since none of the elements were cooked from scratch and were all store bought. It's super simple but I wanted to include it on here because I thought the ingredients worked really well together and I will certainly come back to make it again. ",
+        "Ingredients": [
+            "200g crumbed chicken strips",
+            "wraps of choice(I used spinach wraps bought from from Food Lovers Market)",
+            "Handful chopped cabbage",
+            "1 apple finely sliced",
+            "1 / 4 red onion finely sliced",
+            "2 teaspoon mayo",
+            "1 tablespoon basil pesto",
+            "1 tablespoon greek yoghurt",
+            "juice from 1 / 2 lemon",
+            "1 teaspoon paprika",
+            "Handful cherry tomatoes finely sliced",
+            "1 / 2 avo sliced",
+            "1 / 2 handful fresh coriander"
+        ],
+        "IngredientList": [
+
+        ],
+        "Method": [
+            "Heat your crumbed chicken strips on a baking tray in the oven for 15 minutes",
+            "Combine your cabbage, red onion, apple, 1 teaspoon mayo, greek yoghurt, paprika and lemon in a bowl and mix thoroughly",
+            "Combine your remaining teaspoon mayo & basil pesto in bowl and mix thoroughly",
+            "Once chicken is ready, heat wraps on a non-stick pan. Medium heat and no oil required. Allow to cook for 2-3 minutes on each side and then flip over. ",
+            "Smear wrap with pesto mayo and then construct wrap with crumbed chicken, sliced tomatoe, cabbage mixture, avo and coriander."
+        ],
+        "Servings": "2-3",
+        "PrepTime": "20",
+        "CookTime": "20",
+        "ImageCount": "5",
+        "ServingSuggestion": "",
+        "AddOnID": "",
+        "AddOnName": ""
+    },
 
 
 
@@ -562,6 +598,39 @@
         "CookTime": "45",
         "ImageCount": "1",
         "ServingSuggestion": "Best served with a dollop of Creme Fraiche! ",
+        "AddOnID": ""
+    },
+    "VT6": {
+        "Name": "Banana & Chia Pancakes",
+        "Description": "Healthy yet delicious and sweet pancakes! Can be served with your topping of choice.  ",
+        "Ingredients": {
+            "Pancake Batter": [
+                "1 banana",
+                "2 large eggs",
+                "1 cup oats",
+                "1 cup milk(I used almond milk)",
+                "2 tablespoons chia seeds"
+            ],
+            "Toppings": [
+                "Greek yoghurt",
+                "Peanut butter",
+                "Banana",
+                "Honey",
+                "Cinnamon"
+            ]
+        },
+        "Method": [
+            "Combine all ingredients listed under pancake batter in a blender and blend thoroughly",
+            "Heat a non-stick pan with a little bit of oil on medium heat",
+            "Using a tablespoon gently put your batter onto the pan. I used about two heaped tablespoons per pancake",
+            "Allow to cook on each side for about 3-4 minutes or until golden brown",
+            "To serve, create almost a kind of layered cake of pancakes: Place one pancake on the plate, smear with peanut butter and yoghurt, drizzle with honey and sprinkle with cinnamons. Then add another pancake on top and repeat for two more pancakes. Finish off by topping with chopped bananas. "
+        ],
+        "Servings": "2",
+        "PrepTime": "10",
+        "CookTime": "10",
+        "ImageCount": "3",
+        "ServingSuggestion": "",
         "AddOnID": ""
     },
 

@@ -292,6 +292,18 @@ async function insertRecipeInfo() {
         $(".image-order").html(`${imageClickCount} / ${imageCount}`)
     });
 
+    $(".prev-image").click(() => {
+
+        if (imageClickCount > 1) {
+            imageClickCount--;
+        } else {
+            imageClickCount = 1;
+        }
+        let recipeImage = `url("../assets/images/recipes/${recipeType}/${recipeNo}/${imageClickCount}.jpg")`;
+        $(".recipe-image").css("background-image", recipeImage);
+        $(".image-order").html(`${imageClickCount} / ${imageCount}`)
+    });
+
 
     // Add-On Recipes
     if (recipe.AddOnID != "") { // {Check if add-on recipe exists}
