@@ -11,7 +11,7 @@ const loadHomeRecipes = () => {
                 let recipeThumbnail = recipe.recipeThumbnailUrl;
                 recipeThumbnail = recipeThumbnail.replace("upload/", "upload/w_250/f_auto/");
                 if (recipe.recipeType == "add-on") {
-                    $(".home-add-on-grid .row").append(
+                    $(".home-add-on-grid .row").prepend(
                         `
                         <a class="home-recipe-add-on col-sm-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
                             <img src=${recipeThumbnail}>                  
@@ -20,7 +20,7 @@ const loadHomeRecipes = () => {
                         `
                     )
                 } else {
-                    $(".home-recipe-grid .row").append(
+                    $(".home-recipe-grid .row").prepend(
                         `
                         <a class="home-recipe col-sm-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}" href="./recipe.html#${recipe.recipeCode}" data-recipe-type="${recipe.recipeType}">
                             <img src=${recipeThumbnail}>                  
