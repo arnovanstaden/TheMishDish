@@ -8,11 +8,13 @@ const loadHomeRecipes = () => {
         .then(response => {
             const recipes = response.data;
             recipes.forEach(recipe => {
+                let recipeThumbnail = recipe.recipeThumbnailUrl;
+                recipeThumbnail = recipeThumbnail.replace("upload/", "upload/w_250/f_auto/");
                 if (recipe.recipeType == "add-on") {
                     $(".home-add-on-grid .row").append(
                         `
                         <a class="home-recipe-add-on col-sm-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
-                            <img src=${recipe.recipeThumbnailUrl}>                  
+                            <img src=${recipeThumbnail}>                  
                             <h5>${recipe.name}</h5>                
                         </a>
                         `
@@ -21,16 +23,21 @@ const loadHomeRecipes = () => {
                     $(".home-recipe-grid .row").append(
                         `
                         <a class="home-recipe col-sm-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}" href="./recipe.html#${recipe.recipeCode}" data-recipe-type="${recipe.recipeType}">
-                            <img src=${recipe.recipeThumbnailUrl}>                  
+                            <img src=${recipeThumbnail}>                  
                             <h5>${recipe.name}</h5>                
                         </a>
                         `
                     )
                 }
             });
-            hideLoader()
+            hideLoader();
+            windowLoadFilter()
         })
-        .catch(err => console.log(err))
+        .catch(err => console.log(err));
+
+    if ($("home-add-on-grid .row").children().length < 1) {
+        $(".home-add-on-section").hide()
+    }
 
 }
 
@@ -58,7 +65,8 @@ const loadRecipe = () => {
             document.title = recipe.name;
 
             // Set Landing Image
-            $(".recipe-image").css("background-image", `url("${recipe.recipeImageUrls[0]}")`);
+            recipelandingImage = recipe.recipeImageUrls[0].replace("upload/", "upload/f_auto/");
+            $(".recipe-image").css("background-image", `url("${recipelandingImage}")`);
 
             $(".recipe-name").html(recipe.name);
             $(".recipe-description").html(recipe.description);
@@ -89,12 +97,11 @@ const loadRecipe = () => {
                         )
                         ingCount++;
                     });
-                    $(".recipe-ing-count").html(ingCount);
-
                 }
+                $(".recipe-ing-count").html(ingCount);
             } else {
                 recipe.ingredients["0"].forEach(ingredient => {
-                    $(".recipe-ing-count").html(ingredientComponents.length);
+                    $(".recipe-ing-count").html(recipe.ingredients["0"].length);
                     $(".ingredients-list").append(
                         `
                         <div> 
@@ -200,4 +207,24 @@ const loadRecipe = () => {
     // ---------------
 
 
+}
+
+
+// Filter Categories on Load
+
+const windowLoadFilter = () => {
+    // Get Category Type
+    pageCat = window.location.href
+
+    // Filter if not "All"
+    if (pageCat.indexOf("?") >= 0) {
+        pageCat = pageCat.slice(pageCat.indexOf("?") + 1);
+
+        filterCat(`recipe-${pageCat}`);
+        $(".home-recipe-categories > p").removeClass("active-recipe-cat");
+        $(`#recipe-cat-${pageCat}`).addClass("active-recipe-cat");
+        document.querySelector('#recipe-cats').scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
 }

@@ -64,30 +64,7 @@ function filterCat(recipeCat) {
   }
 }
 
-// Filter Categories on Load
 
-$(document).ready(function () {
-
-  if (window.location.pathname == "/index.html") {
-
-    // Get Category Type
-    pageCat = window.location.href
-
-    // Filter if not "All"
-    if (pageCat.indexOf("?") >= 0) {
-      pageCat = pageCat.slice(pageCat.indexOf("?") + 1);
-
-      filterCat(`recipe-${pageCat}`);
-      $(".home-recipe-categories > p").removeClass("active-recipe-cat");
-      $(`#recipe-cat-${pageCat}`).addClass("active-recipe-cat");
-      document.querySelector('#recipe-cats').scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  }
-
-
-});
 
 // 404 page
 
