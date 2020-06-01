@@ -21,7 +21,10 @@
     <link rel="icon" type="image/png" href="./assets/images/icons/favicon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cormorant:400,500|Montserrat:300,300i,400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400&display=swap" rel="stylesheet">
+
+
 
     <!-- Theme Colour -->
     <meta name="theme-color" content="#000000">
@@ -29,6 +32,8 @@
 
     <!-- Vendors -->
     <link href="./vendors/font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Internal -->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
@@ -36,63 +41,86 @@
 
 </head>
 
-<body>
+<body onload="loadHomeRecipes()">
 
-    <section class="home-landing">
-        <img src="./assets/images/icons/home-logo.png" alt="">
-    </section>
+    <div class="page-body">
 
-
-    <section class="home-recipe-section">
-        <h1>All Recipes</h1>
-        <div class="divider-line"></div>
-        <div class="home-recipe-categories" id="recipe-cats">
-            <p class="active-recipe-cat" id="recipe-cat-all">All</p>
-            <p id="recipe-cat-meat">Meat</p>
-            <p id="recipe-cat-vegetarian">Vegetarian</p>
-            <p id="recipe-cat-vegan">Vegan</p>
-        </div>
-        <div class="home-recipe-grid">
-
-            <!-- JSON Inserted Here -->
-
-        </div>
-    </section>
-
-    <section class="home-add-on-section">
-        <h1>Add-On Recipes</h1>
-        <div class="divider-line"></div>
-        <div class="home-add-on-grid">
-
-            <!-- JSON Inserted Here -->
-
-        </div>
-    </section>
+        <section class="home-landing">
+            <img src="./assets/images/icons/home-logo.png" alt="">
+        </section>
 
 
-    <section class="about-section" id="about">
-        <div class="about-text">
-            <h1>About Mish</h1>
+        <section class="home-recipe-section">
+            <h1>All Recipes</h1>
             <div class="divider-line"></div>
-            <p>My name is Mish. I am not a professional chef and I have no education or background in either cooking or
-                nutrition. I am merely your every day gal with a passion for cooking and creating dishes and ‘recipes'
-                which are: affordable, easy to make, my personal opinion of healthy, made from your every day fridge
-                ingredients and full of flavor. I often find that recipes by well known chefs, despite being delicious,
-                were either too difficult to follow, required specific kitchen tools, or required ingredients which you
-                had to go out and source, buy at a high price and then never use again. That is why I created ‘The Mish
-                Dish’ - a personal catalogue of some of my favorite, personally created, go-to dishes. Enjoy</p>
-        </div>
-        <div class="about-image"></div>
-    </section>
+            <div class="home-recipe-categories container" id="recipe-cats">
+                <p class="active-recipe-cat" id="recipe-cat-all">All</p>
+                <p id="recipe-cat-meat">Meat</p>
+                <p id="recipe-cat-vegetarian">Vegetarian</p>
+                <p id="recipe-cat-vegan">Vegan</p>
+            </div>
+            <div class="home-recipe-grid container">
 
-    <footer>
-        <p>Design & Development by <a href="http://www.webdacity.co.za/">Webdacity</a> </p>
-    </footer>
+                <div class="row">
+                    <!-- JSON Inserted Here -->
+                </div>
+
+            </div>
+        </section>
+
+        <section class="home-add-on-section">
+            <h1>Add-On Recipes</h1>
+            <div class="divider-line"></div>
+            <div class="home-add-on-grid container">
+                <div class="row">
+                    <!-- JSON Inserted Here -->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-section" id="about">
+            <div class="about-text">
+                <h1>About Mish</h1>
+                <div class="divider-line"></div>
+                <p>My name is Mish. I am not a professional chef and I have no education or background in either cooking
+                    or
+                    nutrition. I am merely your every day gal with a passion for cooking and creating dishes and
+                    ‘recipes'
+                    which are: affordable, easy to make, my personal opinion of healthy, made from your every day fridge
+                    ingredients and full of flavor. I often find that recipes by well known chefs, despite being
+                    delicious,
+                    were either too difficult to follow, required specific kitchen tools, or required ingredients which
+                    you
+                    had to go out and source, buy at a high price and then never use again. That is why I created ‘The
+                    Mish
+                    Dish’ - a personal catalogue of some of my favorite, personally created, go-to dishes. Enjoy</p>
+            </div>
+            <div class="about-image"></div>
+        </section>
+
+        <footer>
+            <p>Design & Development by <a href="http://www.webdacity.co.za/">Webdacity</a> </p>
+        </footer>
+
+    </div> <!-- End Page Body-->
+
+    <!-- Loader -->
+    <div class="loader">
+        <div>
+            <img src="./assets/images/icons/loader.png" alt="The Mish Dish Logo">
+        </div>
+    </div>
+
 
 
 
     <!-- Scripts -->
-    <script src="vendors/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/recipes.js"></script>
 

@@ -1,7 +1,7 @@
 /* Set Variables */
 
 :root {
-    --serif: "Cormorant";
+    --serif: "Old Standard TT";
     --sans-serif: "Montserrat";
     --dark-blue: #213242;
     --light-blue: #EDF1FE;
@@ -10,17 +10,6 @@
 
 @media screen and (max-width: 1200px) {
     /* home Page */
-
-    .home-recipe-grid {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 5% 5%;
-        column-gap: 5%;
-    }
-
-    .home-recipe-image {
-        width: 20vh;
-        height: 20vh;
-    }
 
     .home-landing img {
         width: 37.5vw;
@@ -52,7 +41,7 @@
     .home-recipe-grid,
     .home-add-on-grid {
         grid-template-columns: repeat(2, 1fr);
-        padding: 5% 5%;
+        padding: 3rem 0;
         row-gap: 1rem;
     }
 
@@ -136,8 +125,8 @@
     /* navbar */
 
     .navbar-content img {
-        width: 50%;
-        padding-bottom: 1.5rem;
+        width: 25%;
+        padding-bottom: 3rem;
     }
 
     .navbar-links>div {
@@ -154,18 +143,6 @@
 
     .home-landing img {
         width: 60vw;
-    }
-
-    .home-recipe-grid,
-    .home-add-on-grid {
-        grid-template-columns: 1fr;
-        padding: 5% 5%;
-        row-gap: 1rem;
-    }
-
-    .home-recipe-image {
-        width: 25vh;
-        height: 25vh;
     }
 
     .recipe-stats {
@@ -196,6 +173,16 @@
         margin: 3% 5%;
     }
 
+    .home-recipe img {
+        width: 50%;
+    }
+
+
+    .home-recipe h5,
+    .home-recipe-add-on h5 {
+        font-size: 1.2rem;
+    }
+
 
     /* 404 Page */
 
@@ -205,5 +192,10 @@
 
     .section-404>div {
         padding: 0 10%;
+    }
+
+    .navbar-content img {
+        width: 45%;
+        padding-bottom: 3rem;
     }
 }

@@ -54,41 +54,17 @@ $(".home-recipe-categories > p").click(function () {
 });
 
 function filterCat(recipeCat) {
-  if (recipeCat == "recipe-cat-all") {
-    $(".home-recipe-grid > a").fadeIn(500);
-    console.log("filter-all")
+  const category = recipeCat.slice(recipeCat.lastIndexOf("-") + 1, recipeCat.length);
+  console.log("filter: " + category)
+  if (category === "all") {
+    $(".home-recipe-grid .home-recipe").fadeIn(500);
   } else {
-    recipeCat = recipeCat.replace("-cat", "");
     $(".home-recipe").hide();
-    $(`.${recipeCat}`).fadeIn(500);
-    console.log("filter " + recipeCat)
+    $(`.home-recipe[data-recipe-type="${category}"`).fadeIn(500);
   }
 }
 
-// Filter Categories on Load
 
-$(document).ready(function () {
-
-  if (window.location.pathname == "/index.html") {
-
-    // Get Category Type
-    pageCat = window.location.href
-
-    // Filter if not "All"
-    if (pageCat.indexOf("?") >= 0) {
-      pageCat = pageCat.slice(pageCat.indexOf("?") + 1);
-
-      filterCat(`recipe-${pageCat}`);
-      $(".home-recipe-categories > p").removeClass("active-recipe-cat");
-      $(`#recipe-cat-${pageCat}`).addClass("active-recipe-cat");
-      document.querySelector('#recipe-cats').scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  }
-
-
-});
 
 // 404 page
 
@@ -96,4 +72,12 @@ if (window.location.pathname == "/404.html") {
   setTimeout(() => {
     window.location.pathname = "./index.html"
   }, 6000);
+}
+
+// Loader
+
+const hideLoader = () => {
+  $("html").css("overflow-y", "scroll")
+  $(".loader").fadeOut(500);
+  $(".page-body").fadeIn(500);
 }
