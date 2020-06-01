@@ -259,6 +259,7 @@ body {
     transition: ease 0.5s;
     text-decoration: none !important;
     margin-bottom: 2.5rem;
+    padding: 0 1rem;
 }
 
 .home-recipe img,

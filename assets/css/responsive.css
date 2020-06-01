@@ -133,6 +133,10 @@
         margin-left: -1.75rem;
     }
 
+    .about-text p {
+        padding-right: 0;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
