@@ -27,6 +27,11 @@
         width: 45vw;
     }
 
+    .home-recipe,
+    .home-recipe-add-on {
+        padding: 0 2rem;
+    }
+
     .home-landing,
     .section-404 {
         background-image: url("../images/other/home-mobile.jpg");
