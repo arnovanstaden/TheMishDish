@@ -10,12 +10,12 @@ html {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
     position: relative;
 }
-
 /* Set Variables */
 
 :root {
@@ -47,25 +47,11 @@ body {
 #bar1,
 #bar2,
 #bar3 {
-    width: 2rem;
-    height: 0.25rem;
+    width: 1.25rem;
+    height: 0.125rem;
     background-color: var(--dark-blue);
-    margin: 6px 0;
+    margin: 4px 0;
     transition: 0.4s;
-}
-
-.change #bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change #bar2 {
-    opacity: 0;
-}
-
-.change #bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /* Navbar Content */
@@ -123,6 +109,20 @@ body {
     font-size: 1rem;
     color: var(--yellow);
     margin-right: 1.5rem;
+}
+
+.navbar-social {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease-out;
+}
+
+.navbar-social:hover {
+    color: var(--yellow);
 }
 
 
@@ -220,6 +220,19 @@ body {
 .home-landing img {
     margin: auto;
     width: 30vw;
+}
+
+.home-landing a {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--dark-blue);
+    transition: 0.3s ease-out;
+    font-size: 1.1rem;
+}
+
+.home-landing a:hover {
+    color: var(--yellow);
 }
 
 /* All Recipes Section */
@@ -802,6 +815,20 @@ footer p a {
 
 footer p a:hover {
     color: var(--yellow);
+}
+
+footer > a {
+    color: var(--yellow);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+footer > a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 

@@ -63,6 +63,8 @@ const loadRecipe = () => {
             console.log(recipe)
             // Insert HTML
             document.title = recipe.name;
+            $('head').append(`<meta name="description" content="${recipe.description}">`);
+
 
             // Set Landing Image
             recipelandingImage = recipe.recipeImageUrls[0].replace("upload/", "upload/f_auto/");
@@ -175,7 +177,7 @@ const loadRecipe = () => {
                 if (imageClickCount > imageCount) {
                     imageClickCount = 1;
                 }
-                let recipeImage = `url("${recipe.recipeImageUrls[imageClickCount -1]}")`;
+                let recipeImage = `url("${recipe.recipeImageUrls[imageClickCount - 1]}")`;
                 $(".recipe-image").css("background-image", recipeImage);
                 $(".image-order").html(`${imageClickCount} / ${imageCount}`)
             });
@@ -185,7 +187,7 @@ const loadRecipe = () => {
                 if (imageClickCount < imageCount) {
                     imageClickCount = 1;
                 }
-                let recipeImage = `url("${recipe.recipeImageUrls[imageClickCount -1]}")`;
+                let recipeImage = `url("${recipe.recipeImageUrls[imageClickCount - 1]}")`;
                 $(".recipe-image").css("background-image", recipeImage);
                 $(".image-order").html(`${imageClickCount} / ${imageCount}`)
             });

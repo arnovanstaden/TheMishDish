@@ -14,8 +14,8 @@
 
     <!-- Website Content -->
     <title> The Mish Dish</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="" />
+    <meta name="description" content="A personal catalogue of some of my favorite, personally created, go-to dishes">
+    <meta name="keywords" content="recipe, blog, cooking, food" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145244211-4"></script>
@@ -34,15 +34,13 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="/assets/css/fonts/fontello/css/fontello.css">
 
     <!-- Theme Colour -->
     <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
 
     <!-- Vendors -->
-    <link href="./vendors/font-awesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Internal -->
@@ -53,67 +51,70 @@
 
 <body onload="loadHomeRecipes()">
 
-    <div class="page-body">
+    <section class="home-landing">
+        <img src="./assets/images/icons/home-logo.png" alt="">
+        <a href="https://www.instagram.com/_themishdish_" target="blank">
+            <i class="icon-instagram"></i>
+        </a>
+    </section>
 
-        <section class="home-landing">
-            <img src="./assets/images/icons/home-logo.png" alt="">
-        </section>
+
+    <section class="home-recipe-section">
+        <h1>All Recipes</h1>
+        <div class="divider-line"></div>
+        <div class="home-recipe-categories container" id="recipe-cats">
+            <p class="active-recipe-cat" id="recipe-cat-all">All</p>
+            <p id="recipe-cat-meat">Meat</p>
+            <p id="recipe-cat-vegetarian">Vegetarian</p>
+            <p id="recipe-cat-vegan">Vegan</p>
+        </div>
+        <div class="home-recipe-grid container">
+
+            <div class="row">
+                <!-- JSON Inserted Here -->
+            </div>
+
+        </div>
+    </section>
+
+    <section class="home-add-on-section">
+        <h1>Add-On Recipes</h1>
+        <div class="divider-line"></div>
+        <div class="home-add-on-grid container">
+            <div class="row">
+                <!-- JSON Inserted Here -->
+            </div>
+        </div>
+    </section>
 
 
-        <section class="home-recipe-section">
-            <h1>All Recipes</h1>
+    <section class="about-section" id="about">
+        <div class="about-text">
+            <h1>About Mish</h1>
             <div class="divider-line"></div>
-            <div class="home-recipe-categories container" id="recipe-cats">
-                <p class="active-recipe-cat" id="recipe-cat-all">All</p>
-                <p id="recipe-cat-meat">Meat</p>
-                <p id="recipe-cat-vegetarian">Vegetarian</p>
-                <p id="recipe-cat-vegan">Vegan</p>
-            </div>
-            <div class="home-recipe-grid container">
+            <p>My name is Mish. I am not a professional chef and I have no education or background in either cooking
+                or
+                nutrition. I am merely your every day gal with a passion for cooking and creating dishes and
+                ‘recipes'
+                which are: affordable, easy to make, my personal opinion of healthy, made from your every day fridge
+                ingredients and full of flavor. I often find that recipes by well known chefs, despite being
+                delicious,
+                were either too difficult to follow, required specific kitchen tools, or required ingredients which
+                you
+                had to go out and source, buy at a high price and then never use again. That is why I created ‘The
+                Mish
+                Dish’ - a personal catalogue of some of my favorite, personally created, go-to dishes. Enjoy</p>
+        </div>
+        <div class="about-image"></div>
+    </section>
 
-                <div class="row">
-                    <!-- JSON Inserted Here -->
-                </div>
+    <footer>
+        <a href="https://www.instagram.com/_themishdish_" target="blank">
+            <i class="icon-instagram"></i> Instagram
+        </a>
+        <p>Design & Development by <a href="http://www.webdacity.dev/" target="blank">Webdacity</a> </p>
+    </footer>
 
-            </div>
-        </section>
-
-        <section class="home-add-on-section">
-            <h1>Add-On Recipes</h1>
-            <div class="divider-line"></div>
-            <div class="home-add-on-grid container">
-                <div class="row">
-                    <!-- JSON Inserted Here -->
-                </div>
-            </div>
-        </section>
-
-
-        <section class="about-section" id="about">
-            <div class="about-text">
-                <h1>About Mish</h1>
-                <div class="divider-line"></div>
-                <p>My name is Mish. I am not a professional chef and I have no education or background in either cooking
-                    or
-                    nutrition. I am merely your every day gal with a passion for cooking and creating dishes and
-                    ‘recipes'
-                    which are: affordable, easy to make, my personal opinion of healthy, made from your every day fridge
-                    ingredients and full of flavor. I often find that recipes by well known chefs, despite being
-                    delicious,
-                    were either too difficult to follow, required specific kitchen tools, or required ingredients which
-                    you
-                    had to go out and source, buy at a high price and then never use again. That is why I created ‘The
-                    Mish
-                    Dish’ - a personal catalogue of some of my favorite, personally created, go-to dishes. Enjoy</p>
-            </div>
-            <div class="about-image"></div>
-        </section>
-
-        <footer>
-            <p>Design & Development by <a href="http://www.webdacity.co.za/">Webdacity</a> </p>
-        </footer>
-
-    </div> <!-- End Page Body-->
 
     <!-- Loader -->
     <div class="loader">

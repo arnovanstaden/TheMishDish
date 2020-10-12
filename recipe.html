@@ -14,8 +14,8 @@
 
     <!-- Website Content -->
     <title> Chicken & Brocolli Pesto Pasta</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="" />
+    <!-- <meta name="description" content=""> -->
+    <meta name="keywords" content="recipe, blog, cooking, food" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145244211-4"></script>
@@ -43,6 +43,7 @@
     <link href="./vendors/font-awesome/css/all.css" rel="stylesheet">
     <link href="./vendors/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="./vendors/hover.css/hover.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/fonts/fontello/css/fontello.css">
 
     <!-- Internal -->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
@@ -52,111 +53,113 @@
 
 <body onload="loadRecipe()">
 
-    <div class="page-body">
+    <!-- Navbar -->
 
-        <!-- Navbar -->
+    <div class="navbar-icon" onclick="openMenu(this)">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+    </div>
 
-        <div class="navbar-icon" onclick="openMenu(this)">
-            <div class="bar" id="bar1"></div>
-            <div class="bar" id="bar2"></div>
-            <div class="bar" id="bar3"></div>
+    <div class="navbar-content">
+        <img src="./assets/images/icons/Logo-Horisontal.png" alt="">
+        <div class="divider-line"></div>
+        <div class="navbar-links">
+            <div>
+                <i class="fal fa-scroll"></i>
+                <a href="index.html" class="hvr-underline-from-left">All Recipes</a>
+            </div>
+            <div>
+                <i class="fal fa-steak"></i>
+                <a href="index.html?meat" class="hvr-underline-from-left">Meat</a>
+            </div>
+            <div>
+                <i class="fal fa-salad"></i>
+                <a href="index.html?vegetarian" class="hvr-underline-from-left">Vegetarian</a>
+            </div>
+            <div>
+                <i class="fal fa-leaf-heart"></i>
+                <a href="index.html?vegan" class="hvr-underline-from-left">Vegan</a>
+            </div>
         </div>
+        <a class="navbar-social" href="https://www.instagram.com/_themishdish_" target="blank">
+            <i class="icon-instagram"></i> Instagram
+        </a>
+    </div>
 
-        <div class="navbar-content">
-            <img src="./assets/images/icons/Logo-Horisontal.png" alt="">
+
+
+
+    <section class=" recipe-intro">
+        <div class="recipe-image">
+            <div class="recipe-circle"></div>
+            <div class="recipe-arrows">
+                <div class="prev-image">
+                    <i class="fal fa-chevron-left"></i>
+                </div>
+                <div class="image-order">1/2</div>
+                <div class="next-image">
+                    <i class="fal fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="recipe-info">
+            <h1 class="recipe-name"></h1>
             <div class="divider-line"></div>
-            <div class="navbar-links">
+            <p class="recipe-description"></p>
+            <div class="recipe-stats">
                 <div>
-                    <i class="fal fa-scroll"></i>
-                    <a href="index.html" class="hvr-underline-from-left">All Recipes</a>
+                    <i class="fal fa-soup"></i>
+                    <p>Serving</p>
+                    <h6 class="recipe-serving"></h6>
                 </div>
                 <div>
-                    <i class="fal fa-steak"></i>
-                    <a href="index.html?meat" class="hvr-underline-from-left">Meat</a>
+                    <i class="fal fa-clock"></i>
+                    <p>Prep Time</p>
+                    <h6 class="recipe-prep"></h6>
+                </div>
+                <div>
+                    <i class="fal fa-hourglass"></i>
+                    <p>Cook Time</p>
+                    <h6 class="recipe-cook"></h6>
                 </div>
                 <div>
                     <i class="fal fa-salad"></i>
-                    <a href="index.html?vegetarian" class="hvr-underline-from-left">Vegetarian</a>
-                </div>
-                <div>
-                    <i class="fal fa-leaf-heart"></i>
-                    <a href="index.html?vegan" class="hvr-underline-from-left">Vegan</a>
+                    <p>Ingredients</p>
+                    <h6 class="recipe-ing-count"></h6>
                 </div>
             </div>
         </div>
+    </section>
 
-
-
-
-        <section class="recipe-intro">
-            <div class="recipe-image">
-                <div class="recipe-circle"></div>
-                <div class="recipe-arrows">
-                    <div class="prev-image">
-                        <i class="fal fa-chevron-left"></i>
-                    </div>
-                    <div class="image-order">1/2</div>
-                    <div class="next-image">
-                        <i class="fal fa-chevron-right"></i>
-                    </div>
-                </div>
+    <section class="recipe-method">
+        <div class="recipe-method-ingredients">
+            <h1>Ingredients</h1>
+            <div class="divider-line"></div>
+            <div class="ingredients-list">
             </div>
-            <div class="recipe-info">
-                <h1 class="recipe-name"></h1>
+        </div>
+        <div class="recipe-method-steps">
+            <h1>Method</h1>
+            <div class="divider-line"></div>
+            <div class="recipe-method-steps-list">
+            </div>
+
+            <div class="serving-suggestion">
+                <h2>Serving Suggestion</h2>
                 <div class="divider-line"></div>
-                <p class="recipe-description"></p>
-                <div class="recipe-stats">
-                    <div>
-                        <i class="fal fa-soup"></i>
-                        <p>Serving</p>
-                        <h6 class="recipe-serving"></h6>
-                    </div>
-                    <div>
-                        <i class="fal fa-clock"></i>
-                        <p>Prep Time</p>
-                        <h6 class="recipe-prep"></h6>
-                    </div>
-                    <div>
-                        <i class="fal fa-hourglass"></i>
-                        <p>Cook Time</p>
-                        <h6 class="recipe-cook"></h6>
-                    </div>
-                    <div>
-                        <i class="fal fa-salad"></i>
-                        <p>Ingredients</p>
-                        <h6 class="recipe-ing-count"></h6>
-                    </div>
-                </div>
+                <p class="recipe-serving-suggestion"></p>
             </div>
-        </section>
+        </div>
 
-        <section class="recipe-method">
-            <div class="recipe-method-ingredients">
-                <h1>Ingredients</h1>
-                <div class="divider-line"></div>
-                <div class="ingredients-list">
-                </div>
-            </div>
-            <div class="recipe-method-steps">
-                <h1>Method</h1>
-                <div class="divider-line"></div>
-                <div class="recipe-method-steps-list">
-                </div>
+    </section>
 
-                <div class="serving-suggestion">
-                    <h2>Serving Suggestion</h2>
-                    <div class="divider-line"></div>
-                    <p class="recipe-serving-suggestion"></p>
-                </div>
-            </div>
-
-        </section>
-
-        <footer>
-            <p>Design & Development by <a href="http://www.webdacity.co.za/">Webdacity</a> </p>
-        </footer>
-
-    </div> <!-- End Page Body-->
+    <footer>
+        <a href="https://www.instagram.com/_themishdish_" target="blank">
+            <i class="icon-instagram"></i> Instagram
+        </a>
+        <p>Design & Development by <a href="http://www.webdacity.dev/" target="blank">Webdacity</a> </p>
+    </footer>
 
     <!-- Loader -->
     <div class="loader">
