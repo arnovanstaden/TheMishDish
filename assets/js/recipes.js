@@ -10,25 +10,14 @@ const loadHomeRecipes = () => {
             recipes.forEach(recipe => {
                 let recipeThumbnail = recipe.recipeThumbnailUrl;
                 recipeThumbnail = recipeThumbnail.replace("upload/", "upload/w_250/f_auto/");
-                if (recipe.recipeType == "add-on") {
-                    $(".home-add-on-grid .row").prepend(
-                        `
-                        <a class="home-recipe-add-on col-sm-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}"" href="./recipe.html#${recipe.recipeCode}">
+                $(".home-recipe-grid .row").prepend(
+                    `
+                        <a class="home-recipe col-sm-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}" href="./recipe.html#${recipe.recipeCode}" data-recipe-type="${recipe.diet}">
                             <img src=${recipeThumbnail}>                  
                             <h5>${recipe.name}</h5>                
                         </a>
                         `
-                    )
-                } else {
-                    $(".home-recipe-grid .row").prepend(
-                        `
-                        <a class="home-recipe col-sm-6 col-lg-4 col-xl-3" id="${recipe.recipeCode}" href="./recipe.html#${recipe.recipeCode}" data-recipe-type="${recipe.recipeType}">
-                            <img src=${recipeThumbnail}>                  
-                            <h5>${recipe.name}</h5>                
-                        </a>
-                        `
-                    )
-                }
+                )
             });
             hideLoader();
             windowLoadFilter()
@@ -73,7 +62,6 @@ const loadRecipe = () => {
             $(".recipe-name").html(recipe.name);
             $(".recipe-description").html(recipe.description);
             $(".recipe-serving").html(recipe.servings);
-            $(".recipe-prep").html(recipe.prepTime);
             $(".recipe-cook").html(recipe.cookTime);
 
             const ingredientComponents = Object.keys(recipe.ingredients);
