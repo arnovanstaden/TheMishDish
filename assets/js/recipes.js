@@ -8,7 +8,7 @@ const loadHomeRecipes = () => {
         .then(response => {
             const recipes = response.data;
             recipes.forEach(recipe => {
-                let recipeThumbnail = recipe.recipeThumbnailUrl;
+                let recipeThumbnail = recipe.thumbnail;
                 recipeThumbnail = recipeThumbnail.replace("upload/", "upload/w_250/f_auto/");
                 $(".home-recipe-grid .row").prepend(
                     `
@@ -56,7 +56,7 @@ const loadRecipe = () => {
 
 
             // Set Landing Image
-            recipelandingImage = recipe.recipeImageUrls[0].replace("upload/", "upload/f_auto/");
+            recipelandingImage = recipe.images[0].replace("upload/", "upload/f_auto/");
             $(".recipe-image").css("background-image", `url("${recipelandingImage}")`);
 
             $(".recipe-name").html(recipe.name);
@@ -150,7 +150,7 @@ const loadRecipe = () => {
             }
 
             //  Recipe Images
-            let imageCount = recipe.recipeImageUrls.length;
+            let imageCount = recipe.images.length;
 
             if (imageCount < 2) {
                 $(".recipe-arrows").css("display", "none")
@@ -165,7 +165,7 @@ const loadRecipe = () => {
                 if (imageClickCount > imageCount) {
                     imageClickCount = 1;
                 }
-                let recipeImage = `url("${recipe.recipeImageUrls[imageClickCount - 1]}")`;
+                let recipeImage = `url("${recipe.images[imageClickCount - 1]}")`;
                 $(".recipe-image").css("background-image", recipeImage);
                 $(".image-order").html(`${imageClickCount} / ${imageCount}`)
             });
@@ -175,7 +175,7 @@ const loadRecipe = () => {
                 if (imageClickCount < imageCount) {
                     imageClickCount = 1;
                 }
-                let recipeImage = `url("${recipe.recipeImageUrls[imageClickCount - 1]}")`;
+                let recipeImage = `url("${recipe.images[imageClickCount - 1]}")`;
                 $(".recipe-image").css("background-image", recipeImage);
                 $(".image-order").html(`${imageClickCount} / ${imageCount}`)
             });
